@@ -1,9 +1,16 @@
+import asphaltImage from "../assets/images/asphalt_link.png";
+import fermeImage from "../assets/images/ferme_link.png";
+import pwaImage from "../assets/images/pwa_link.png";
+import kasaImage from "../assets/images/kasa_link.png";
+import groupomaniaImage from "../assets/images/groupomania_link.png";
+
 const worklist = [
   {
     id: 1,
     title: "ASPHALT",
     description: "Site E-commerce",
     period: "Août 2023",
+    image: asphaltImage,
     tags: ["React", "Sass", "Gsap", "Framer-Motion", "Figma"],
     link: "bikeshop",
     intro: " Site web pour une marque de vélo fictive",
@@ -16,6 +23,7 @@ const worklist = [
     title: "FERME LA ROUGERAIE",
     description: "Site E-commerce",
     period: "Mai 2023",
+    image: fermeImage,
     tags: ["Vue", "Pinia", "Sass", "NodeJs", "Figma"],
     link: "ferme-rougeraie",
     intro: " Site e-commerce pour une productrice de produits bio .",
@@ -29,6 +37,7 @@ const worklist = [
     title: "GCA",
     description: "Stage Gca",
     period: "Mars 2023",
+    image: pwaImage,
     tags: ["Vue", "Pinia", "Sass", "Figma"],
     link: "gca",
     intro:
@@ -43,6 +52,7 @@ const worklist = [
     title: "KASA",
     description: "Formation OpenClassrooms",
     period: "Décembre 2022",
+    image: kasaImage,
     tags: ["React", "Sass"],
     link: "kasa",
     intro:
@@ -55,6 +65,7 @@ const worklist = [
     title: "GROUPOMANIA",
     description: "Formation OpenClassrooms",
     period: "Novembre 2022",
+    image: groupomaniaImage,
     tags: ["React", "Sass", "NodeJs"],
     link: "groupomania",
     intro: " Réseau social interne pour les employés d'une entreprise réalisé durant ma formation Openclassrooms.",
