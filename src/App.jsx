@@ -30,9 +30,7 @@ function App() {
         mouseCursor.classList.add("link-grow");
       });
     });
-    // Vérifiez si l'emplacement actuel est différent de "/"
     if (location.pathname !== "/") {
-      let mouseCursor = document.querySelector(".cursor");
       mouseCursor.classList.remove("link-grow");
     }
   }, [location]);
