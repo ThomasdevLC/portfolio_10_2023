@@ -6,7 +6,6 @@ const Home = () => {
     <div>
       <Header />
       <WorksList />
-      <p>home</p>
     </div>
   );
 };
