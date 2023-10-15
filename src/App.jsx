@@ -7,6 +7,7 @@ import FermeRougeraie from "./pages/works/FermeRougeraie";
 import Groupomania from "./pages/works/Groupomania";
 import Kasa from "./pages/works/Kasa";
 import Gca from "./pages/works/Gca";
+import arrow from "./assets/images/arrow_right.png";
 
 function App() {
   const location = useLocation();
