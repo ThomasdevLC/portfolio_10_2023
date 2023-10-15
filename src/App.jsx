@@ -28,10 +28,8 @@ function App() {
         mouseCursor.classList.add("link-grow");
       });
     });
-    if (window.location.pathname !== "/") {
-      mouseCursor.classList.add("link-grow");
-    }
   }, []);
+
   return (
     <>
       <div className="cursor"></div>
