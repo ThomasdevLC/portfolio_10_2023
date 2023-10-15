@@ -10,5 +10,20 @@
       -webkit-text-stroke: 2px var(--text-color);
       color: var(--secondary);
     }
+
+    &__tag {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      pointer-events: none;
+
+      &__name {
+        height: 25px;
+        padding: 1px 12px;
+        border-radius: 12px;
+        border: 1px solid var(--text-color);
+        line-height: 22px;
+      }
+    }
   }
 }
