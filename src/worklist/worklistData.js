@@ -30,7 +30,7 @@ const worklist = [
     description: "Stage Gca",
     period: "Mars 2023",
     tags: ["Vue", "Pinia", "Sass", "Figma"],
-    link: "pwa",
+    link: "gca",
     intro:
       "Lors de mon stage dans l'entreprise GCA, j'ai développé une application mobile first conçue spécifiquement pour répondre aux besoins des équipes commerciales.",
     pitch:

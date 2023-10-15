@@ -34,7 +34,7 @@ const worklistEn = [
     period: "March 2023",
     image: require("../assets/images/pwa_link.png"),
     tags: ["Vue", "Pinia", "Sass", "Figma"],
-    link: "pwa",
+    link: "gca",
     intro: "During my internship at the company GCA, I developed a mobile-first application designed specifically to meet the needs of the sales teams.",
     pitch:
       "This project, developed using Vue 3 and configured with Vite, was created with the aim of keeping salespeople informed of their sales figures and objectives in real-time. By adopting a Progressive Web App (PWA) approach, the application can be installed directly on users' home screens, providing an experience similar to that of a native app.",
