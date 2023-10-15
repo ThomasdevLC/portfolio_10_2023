@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 
 import Home from "./pages/home/Home";
 import BikeShop from "./pages/works/BikeShop";
@@ -9,6 +9,8 @@ import Kasa from "./pages/works/Kasa";
 import Gca from "./pages/works/Gca";
 
 function App() {
+  const location = useLocation();
+
   useEffect(() => {
     let mouseCursor = document.querySelector(".cursor");
     let menuTitles = document.querySelectorAll(".workslinks__box__name");
@@ -28,22 +30,25 @@ function App() {
         mouseCursor.classList.add("link-grow");
       });
     });
-  }, []);
+    // Vérifiez si l'emplacement actuel est différent de "/"
+    if (location.pathname !== "/") {
+      let mouseCursor = document.querySelector(".cursor");
+      mouseCursor.classList.remove("link-grow");
+    }
+  }, [location]);
 
   return (
     <>
       <div className="cursor"></div>
-      <Router>
-        <Routes>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="/bikeshop/:id" element={<BikeShop />}></Route>
-          <Route path="/ferme-rougeraie/:id" element={<FermeRougeraie />}></Route>
-          <Route path="/groupomania/:id" element={<Groupomania />}></Route>
-          <Route path="/kasa/:id" element={<Kasa />}></Route>
-          <Route path="/gca/:id" element={<Gca />}></Route>
-          <Route path="*" element={<Home />}></Route>{" "}
-        </Routes>
-      </Router>
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/bikeshop/:id" element={<BikeShop />}></Route>
+        <Route path="/ferme-rougeraie/:id" element={<FermeRougeraie />}></Route>
+        <Route path="/groupomania/:id" element={<Groupomania />}></Route>
+        <Route path="/kasa/:id" element={<Kasa />}></Route>
+        <Route path="/gca/:id" element={<Gca />}></Route>
+        <Route path="*" element={<Home />}></Route>{" "}
+      </Routes>
     </>
   );
 }
