@@ -18,21 +18,21 @@ const WorksList = () => {
   });
 
   const handleMouseEnter = (index) => {
-    gsap.to(imageWrapper.current[index], {
+    const menuItemWidth = menuItems.current[index].getBoundingClientRect().width;
+    gsap.set(imageWrapper.current[index], {
       scale: 1.1,
-      xPercent: 90,
-      yPercent: 0,
+      x: menuItemWidth,
+      yPercent: 50,
       rotation: -15,
     });
 
-    gsap.to(imageWrapper.current[index], { opacity: 1, scale: 1, yPercent: 0, rotation: 0 });
+    gsap.to(imageWrapper.current[index], { opacity: 1, scale: 1, yPercent: 0, rotation: 5 });
   };
 
   const handleMouseLeave = (index) => {
     gsap.to(imageWrapper.current[index], {
       opacity: 0,
       yPercent: -50,
-      xPercent: 25,
       scale: 0.8,
       rotation: -15,
     });
