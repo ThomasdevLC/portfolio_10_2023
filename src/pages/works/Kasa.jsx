@@ -1,7 +1,15 @@
+import WorksComponent from "../../components/works/WorksComponent";
+import kasaXl from "../../assets/images/kasa_xl.webp";
+import kasaXs from "../../assets/images/kasa_xs.webp";
+
 const Kasa = () => {
   return (
-    <div>
-      <p>Kasa</p>
+    <div className="kasa__container">
+      <WorksComponent />
+      <div className="kasa__description">
+        <img src={kasaXl} alt="image projet kasa version desktop" />
+        <img src={kasaXs} alt="image projet kasa version mobile" />
+      </div>
     </div>
   );
 };
