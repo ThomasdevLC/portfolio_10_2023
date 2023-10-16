@@ -1,16 +1,19 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import { useParams } from "react-router-dom";
+import { LangContext } from "../../context/LangContext";
 import worklistFr from "../../worklist/worklistData";
+import worklistEn from "../../worklist/worklistDataEn";
 
 const WorksComponent = () => {
   const params = useParams();
   const projectId = parseInt(params.id);
+  const { switchLang } = useContext(LangContext);
   const [project, setProject] = useState(null);
 
   useEffect(() => {
-    const selectedProject = worklistFr.find((w) => w.id === projectId);
+    const selectedProject = (switchLang === "fr" ? worklistFr : worklistEn).find((w) => w.id === projectId);
     setProject(selectedProject);
-  }, [projectId]);
+  }, [projectId, switchLang]);
 
   return (
     <section className="container">

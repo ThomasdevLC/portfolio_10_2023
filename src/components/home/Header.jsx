@@ -1,3 +1,5 @@
+import LanguageSwitcher from "./LanguageSwitcher";
+
 const Header = () => {
   return (
     <div className="header-container">
@@ -7,6 +9,9 @@ const Header = () => {
           <h2 className="header__left__position">Développeur Frontend</h2>
         </div>
         <div className="header__right">
+          <div className="header__right__lang">
+            <LanguageSwitcher />
+          </div>
           <p className="header__right__about">A propos</p>
         </div>
       </div>

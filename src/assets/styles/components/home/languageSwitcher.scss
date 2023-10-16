@@ -1,0 +1,32 @@
+.lang {
+  &__nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 45px;
+    padding: 6px;
+    border: 1px solid var(--gray-3);
+    border-radius: 35px;
+
+    &__btn {
+      height: 30px;
+      width: 30px;
+      display: flex;
+      & img {
+        height: 100%;
+        border-radius: 50%;
+      }
+    }
+    &__mode {
+      width: 35px;
+      font-family: var(--font-title);
+      text-align: center;
+      font-size: 16px;
+      font-weight: 500;
+      overflow: hidden;
+    }
+    &__mode-selected {
+      display: none;
+    }
+  }
+}
