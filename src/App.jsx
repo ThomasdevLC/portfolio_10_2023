@@ -7,14 +7,13 @@ import FermeRougeraie from "./pages/works/FermeRougeraie";
 import Groupomania from "./pages/works/Groupomania";
 import Kasa from "./pages/works/Kasa";
 import Gca from "./pages/works/Gca";
-import arrow from "./assets/images/arrow_right.png";
 
 function App() {
   const location = useLocation();
 
   useEffect(() => {
     let mouseCursor = document.querySelector(".cursor");
-    let menuTitles = document.querySelectorAll(".workslinks__box__name");
+    let menuTitles = document.querySelectorAll(".menu__item__name");
 
     const cursor = (e) => {
       mouseCursor.style.top = e.pageY + "px";

@@ -1,7 +1,7 @@
-.workslinks {
+.menu {
   padding: 140px 40px 0 40px;
 
-  &__box {
+  &__item {
     margin-bottom: 40px;
 
     &__name {
@@ -32,24 +32,25 @@
         line-height: 22px;
       }
     }
-    &__imgbox {
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 600px;
-      height: 400px;
-      pointer-events: none;
-      opacity: 0;
-
-      &__img img {
-        position: absolute;
-        left: 0;
-        top: 0;
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-      }
-    }
   }
+}
+
+.menu__item_image_wrapper {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 400px;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.menu__item_image_inner .menu__item_image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
