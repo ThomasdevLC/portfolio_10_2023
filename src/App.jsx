@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 
 import Home from "./pages/home/Home";
+import Intro from "./components/home/intro";
 import BikeShop from "./pages/works/BikeShop";
 import FermeRougeraie from "./pages/works/FermeRougeraie";
 import Groupomania from "./pages/works/Groupomania";
@@ -36,8 +37,12 @@ function App() {
   }, [location]);
 
   return (
-    <>
+    <div className="main-app">
+      <div className="intro">
+        <Intro />
+      </div>
       <div className="cursor"></div>
+
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/bikeshop/:id" element={<BikeShop />}></Route>
@@ -47,7 +52,7 @@ function App() {
         <Route path="/gca/:id" element={<Gca />}></Route>
         <Route path="*" element={<Home />}></Route>{" "}
       </Routes>
-    </>
+    </div>
   );
 }
 

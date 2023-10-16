@@ -3,7 +3,7 @@ import WorksList from "../../components/home/WorksList";
 
 const Home = () => {
   return (
-    <div>
+    <div className="home-container">
       <Header />
       <WorksList />
     </div>
