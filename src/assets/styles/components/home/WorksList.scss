@@ -38,9 +38,9 @@
 
 .menu__item_image_wrapper {
   position: fixed;
-  bottom: 5%;
+  bottom: 15%;
   right: 5%;
-  // transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   pointer-events: none;
   opacity: 0;
 }
@@ -52,4 +52,5 @@
   height: 100%;
   width: 100%;
   object-fit: cover;
+  z-index: 0;
 }
