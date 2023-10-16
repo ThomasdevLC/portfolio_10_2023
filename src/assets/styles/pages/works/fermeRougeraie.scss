@@ -1,0 +1,21 @@
+@use "../../mixins" as mixin;
+
+.farm__container {
+  background-color: var(--background);
+}
+
+.farm__description {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  row-gap: 40px;
+  padding: 40px;
+
+  &__image-one,
+  &__image-two {
+    border: 2px solid var(--gray-2);
+  }
+}
