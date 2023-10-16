@@ -65,11 +65,12 @@ a {
   transition-property: background, transform;
   transform-origin: 100% 100%;
   box-shadow: 0 0 20px var(--primary), 0 0 25px var(--primary), 0 0 25px var(--primary);
+  z-index: 999;
 }
 
 .link-grow {
   background-image: url("../images/arrow_right.png");
-  background-size: 60%; /* You can adjust this property based on your image requirements */
+  background-size: 60%;
   background-repeat: no-repeat;
   background-position: center;
   transform: scale(5);
