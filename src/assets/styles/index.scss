@@ -6,5 +6,7 @@
 @use "./utils";
 @use "./variables";
 @use "./components/home/header.scss";
-@use "./components/home/WorksList.scss";
+@use "./components/home/worksList.scss";
 @use "./components/home/Intro.scss";
+@use "./components/works/worksComponent.scss";
+@use "./pages/works/bikeShop.scss";

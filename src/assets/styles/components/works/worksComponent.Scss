@@ -1,0 +1,134 @@
+@use "../../mixins" as mixin;
+
+.container {
+  max-width: 1200px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+
+  &__title {
+    font-family: var(--font-title);
+    width: 100%;
+    font-size: 55px;
+    font-weight: 600;
+    text-align: center;
+    padding: 40px 0px 20px 0px;
+    border-radius: 0 0 20px 20px;
+    color: var(--title-color);
+    &__span {
+      display: block;
+    }
+
+    @include mixin.md-lt {
+      font-size: 38px;
+      line-height: 38px;
+      padding: 46px;
+    }
+    @include mixin.xs {
+      font-size: 28px;
+      line-height: 38px;
+      padding: 30px;
+    }
+  }
+}
+.project {
+  max-width: 800px;
+
+  @include mixin.md {
+    max-width: 680px;
+  }
+  @include mixin.sm-lt {
+    max-width: 580px;
+    padding: 20px;
+  }
+
+  &__intro {
+    margin-top: 50px;
+    font-size: 26px;
+    line-height: 38px;
+
+    @include mixin.md {
+      font-size: 20px;
+      line-height: 34px;
+    }
+
+    @include mixin.sm-lt {
+      margin-top: 10px;
+      font-size: 18px;
+      line-height: 28px;
+    }
+
+    @include mixin.xs {
+      margin-top: 20px;
+    }
+  }
+  &__pitch {
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 26px;
+
+    @include mixin.md {
+      font-size: 16px;
+      line-height: 28px;
+    }
+
+    @include mixin.sm-lt {
+      font-size: 14px;
+    }
+  }
+
+  &__table {
+    border-radius: 8px;
+    border: 1px solid var(--text-color);
+    margin-top: 30px;
+
+    &__th {
+      border-left: 1px solid var(--text-color);
+      border-right: 1px solid var(--text-color);
+      @include mixin.sm {
+        font-size: 14px;
+      }
+    }
+    &__td {
+      border-left: 1px solid var(--text-color);
+      border-right: 1px solid var(--text-color);
+
+      @include mixin.sm-lt {
+        font-size: 12px;
+      }
+    }
+    &__td__link {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+}
+
+table {
+  table-layout: fixed;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  padding: 10px 20px;
+  text-align: left;
+  word-wrap: break-word;
+
+  @include mixin.sm-lt {
+    padding: 10px;
+    font-size: 12px;
+  }
+}
+
+th {
+  border-bottom: 1px solid var(--text-color);
+}
+
+td {
+  vertical-align: top;
+}
