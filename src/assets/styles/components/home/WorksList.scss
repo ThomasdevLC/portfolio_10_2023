@@ -8,7 +8,7 @@
     &__name {
       display: inline-block;
       font-family: var(--font-title);
-      font-size: 80px;
+      font-size: 75px;
       -webkit-text-stroke: 2px var(--text-color);
       color: var(--secondary);
       transition: color 0.3s, -webkit-text-stroke 0.3s; /* Ajoute une transition de 0.3 secondes aux propriétés color et -webkit-text-stroke */
@@ -38,6 +38,9 @@
 
 .menu__item_image_wrapper {
   position: fixed;
+  bottom: 5%;
+  right: 5%;
+  // transform: translate(-50%, -50%);
   pointer-events: none;
   opacity: 0;
 }

@@ -18,15 +18,12 @@ const WorksList = () => {
   });
 
   const handleMouseEnter = (index) => {
-    const menuItemWidth = menuItems.current[index].getBoundingClientRect().width;
     gsap.set(imageWrapper.current[index], {
-      scale: 1.1,
-      x: menuItemWidth,
-      yPercent: 50,
+      scale: 1,
       rotation: -15,
     });
 
-    gsap.to(imageWrapper.current[index], { opacity: 1, scale: 1, yPercent: 0, rotation: 5 });
+    gsap.to(imageWrapper.current[index], { opacity: 1, scale: 1.2, yPercent: 0, rotation: 2 });
   };
 
   const handleMouseLeave = (index) => {
