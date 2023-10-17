@@ -69,6 +69,28 @@ const About = () => {
           </ul>
         </div>
       </div>
+      <div className="banner">
+        <div className="banner__left">
+          <p className="banner__left__text">
+            <span>THOMAS LE CAM</span>
+            <span>PORTFOLIO - 2023</span>
+            <span>THOMAS LE CAM</span>
+            <span>PORTFOLIO - 2023</span>
+            <span>THOMAS LE CAM</span>
+            <span>PORTFOLIO - 2023</span>
+          </p>
+        </div>
+        <div className="banner__right">
+          <p className="banner__right__text">
+            <span>THOMAS LE CAM</span>
+            <span>PORTFOLIO - 2023</span>
+            <span>THOMAS LE CAM</span>
+            <span>PORTFOLIO - 2023</span>
+            <span>THOMAS LE CAM</span>
+            <span>PORTFOLIO - 2023</span>
+          </p>
+        </div>
+      </div>
     </div>
   );
 };

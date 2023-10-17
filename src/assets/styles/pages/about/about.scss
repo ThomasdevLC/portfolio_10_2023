@@ -3,6 +3,7 @@
 .intro {
   padding: 60px;
   display: flex;
+  gap: 60px;
   &__left {
     width: 50%;
     &__pic {
@@ -15,7 +16,7 @@
       justify-content: center;
       align-items: center;
       overflow: hidden;
-      margin-bottom: 20px;
+      margin-bottom: 60px;
 
       & img {
         height: 100%;
@@ -94,7 +95,7 @@
     font-family: var(--font-title);
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
     &__stack__title,
     &__libr__title {
       color: var(--primary);
@@ -104,6 +105,32 @@
       font-size: 36px;
       -webkit-text-stroke: 1px var(--text-color);
       color: var(--secondary);
+    }
+  }
+}
+
+.banner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  padding: 0 10px;
+  display: flex;
+  border-left: 1px solid var(--text-color);
+  font-family: var(--font-title);
+  white-space: nowrap;
+  overflow: hidden;
+
+  &__left {
+    &__text {
+      writing-mode: vertical-lr;
+      transform: rotate(180deg);
+    }
+  }
+  &__right {
+    &__text {
+      writing-mode: vertical-lr;
+      transform: rotate(360deg);
     }
   }
 }
