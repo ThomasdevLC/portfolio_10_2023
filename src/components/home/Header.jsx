@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import LanguageSwitcher from "./LanguageSwitcher";
 
 const Header = () => {
@@ -12,7 +13,9 @@ const Header = () => {
           <div className="header__right__lang">
             <LanguageSwitcher />
           </div>
-          <p className="header__right__about">A propos</p>
+          <NavLink to="/about">
+            <p className="header__right__about">A propos</p>
+          </NavLink>
         </div>
       </div>
     </div>

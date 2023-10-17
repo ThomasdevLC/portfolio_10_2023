@@ -8,6 +8,7 @@ import FermeRougeraie from "./pages/works/FermeRougeraie";
 import Groupomania from "./pages/works/Groupomania";
 import Kasa from "./pages/works/Kasa";
 import Gca from "./pages/works/Gca";
+import About from "./pages/about/About";
 
 function App() {
   const location = useLocation();
@@ -42,6 +43,7 @@ function App() {
         <div className="cursor"></div>
         <Routes>
           <Route path="/" element={<Home />}></Route>
+          <Route path="/about" element={<About />}></Route>
           <Route path="/bikeshop/:id" element={<BikeShop />}></Route>
           <Route path="/ferme-rougeraie/:id" element={<FermeRougeraie />}></Route>
           <Route path="/groupomania/:id" element={<Groupomania />}></Route>
