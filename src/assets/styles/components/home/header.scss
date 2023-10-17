@@ -12,7 +12,7 @@
 
   &__left {
     &__name {
-      font-family: var(--font-title);
+      font-family: var(--font-text);
       font-size: 30px;
       font-weight: 800;
     }
@@ -22,7 +22,7 @@
   }
   &__right {
     &__about {
-      font-family: var(--font-title);
+      font-family: var(--font-text);
       font-size: 20px;
     }
   }
