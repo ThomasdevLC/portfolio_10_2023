@@ -90,4 +90,19 @@
       }
     }
   }
+  &__right {
+    font-family: var(--font-title);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    &__stack,
+    &__libr {
+      color: var(--primary);
+      &__list {
+        font-size: 36px;
+        -webkit-text-stroke: 1px var(--text-color);
+        color: var(--secondary);
+      }
+    }
+  }
 }

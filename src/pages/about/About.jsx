@@ -55,9 +55,14 @@ const About = () => {
           <li>JAVASCRIPT</li>
           <li>REACT</li>
           <li>VUE</li>
-          <li>LSASS</li>
           <li>RESPONSIVE DESIGN</li>
           <li>GIT</li>
+        </ul>
+        <p className="intro__right__libr">LIBRARIES</p>
+        <ul className="intro__right__libr__list">
+          <li>SASS</li>
+          <li>GSAP</li>
+          <li>FRAMER-MOTION</li>
         </ul>
       </div>
     </div>
