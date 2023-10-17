@@ -94,15 +94,16 @@
     font-family: var(--font-title);
     display: flex;
     flex-direction: column;
-    gap: 12px;
-    &__stack,
-    &__libr {
+    gap: 20px;
+    &__stack__title,
+    &__libr__title {
       color: var(--primary);
-      &__list {
-        font-size: 36px;
-        -webkit-text-stroke: 1px var(--text-color);
-        color: var(--secondary);
-      }
+    }
+    &__stack__list,
+    &__libr__list {
+      font-size: 36px;
+      -webkit-text-stroke: 1px var(--text-color);
+      color: var(--secondary);
     }
   }
 }

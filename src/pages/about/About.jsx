@@ -49,21 +49,25 @@ const About = () => {
       </div>
 
       <div className="intro__right">
-        <p className="intro__right__stack">STACK</p>
-        <ul className="intro__right__stack__list">
-          <li>HTML5/CSS3</li>
-          <li>JAVASCRIPT</li>
-          <li>REACT</li>
-          <li>VUE</li>
-          <li>RESPONSIVE DESIGN</li>
-          <li>GIT</li>
-        </ul>
-        <p className="intro__right__libr">LIBRARIES</p>
-        <ul className="intro__right__libr__list">
-          <li>SASS</li>
-          <li>GSAP</li>
-          <li>FRAMER-MOTION</li>
-        </ul>
+        <div className="intro__right__stack">
+          <p className="intro__right__stack__title">STACK</p>
+          <ul className="intro__right__stack__list">
+            <li>HTML5/CSS3</li>
+            <li>JAVASCRIPT</li>
+            <li>REACT</li>
+            <li>VUE</li>
+            <li>RESPONSIVE DESIGN</li>
+            <li>GIT</li>
+          </ul>
+        </div>
+        <div className="intro__right__libr">
+          <p className="intro__right__libr__title">LIBRARIES</p>
+          <ul className="intro__right__libr__list">
+            <li>SASS</li>
+            <li>GSAP</li>
+            <li>FRAMER-MOTION</li>
+          </ul>
+        </div>
       </div>
     </div>
   );
