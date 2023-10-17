@@ -5,6 +5,7 @@ import cven from "../../assets/pdf/cven.pdf";
 import homeFr from "../../data/homeText/homeFr";
 import homeEn from "../../data/homeText/homeEn";
 import { LangContext } from "../../context/LangContext";
+import Banner from "../../components/about/Banner";
 
 const About = () => {
   const { switchLang } = useContext(LangContext);
@@ -69,27 +70,8 @@ const About = () => {
           </ul>
         </div>
       </div>
-      <div className="banner">
-        <div className="banner__left">
-          <p className="banner__left__text">
-            <span>THOMAS LE CAM</span>
-            <span>PORTFOLIO - 2023</span>
-            <span>THOMAS LE CAM</span>
-            <span>PORTFOLIO - 2023</span>
-            <span>THOMAS LE CAM</span>
-            <span>PORTFOLIO - 2023</span>
-          </p>
-        </div>
-        <div className="banner__right">
-          <p className="banner__right__text">
-            <span>THOMAS LE CAM</span>
-            <span>PORTFOLIO - 2023</span>
-            <span>THOMAS LE CAM</span>
-            <span>PORTFOLIO - 2023</span>
-            <span>THOMAS LE CAM</span>
-            <span>PORTFOLIO - 2023</span>
-          </p>
-        </div>
+      <div className="intro__banner">
+        <Banner />
       </div>
     </div>
   );

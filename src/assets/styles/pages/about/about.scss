@@ -7,7 +7,7 @@
   &__left {
     width: 50%;
     &__pic {
-      background: white;
+      background: var(--text-color);
       border-radius: 50%;
       margin: auto;
       height: 200x;
@@ -105,32 +105,6 @@
       font-size: 36px;
       -webkit-text-stroke: 1px var(--text-color);
       color: var(--secondary);
-    }
-  }
-}
-
-.banner {
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 100vh;
-  padding: 0 10px;
-  display: flex;
-  border-left: 1px solid var(--text-color);
-  font-family: var(--font-title);
-  white-space: nowrap;
-  overflow: hidden;
-
-  &__left {
-    &__text {
-      writing-mode: vertical-lr;
-      transform: rotate(180deg);
-    }
-  }
-  &__right {
-    &__text {
-      writing-mode: vertical-lr;
-      transform: rotate(360deg);
     }
   }
 }

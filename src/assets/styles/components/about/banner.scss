@@ -1,0 +1,35 @@
+.banner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  padding: 0 10px;
+  display: flex;
+  border-left: 1px solid var(--text-color);
+  font-family: var(--font-text);
+  font-size: 26px;
+  line-height: 30px;
+  white-space: nowrap;
+  overflow: hidden;
+
+  &__left__text,
+  &__right__text {
+    writing-mode: vertical-lr;
+    display: inline-block;
+    display: flex;
+    gap: 30px;
+  }
+
+  &__left__text {
+    transform: rotate(180deg);
+    &__portfolio {
+      color: var(--primary);
+    }
+  }
+  &__right__text {
+    transform: rotate(360deg);
+    &__portfolio {
+      color: var(--primary);
+    }
+  }
+}
