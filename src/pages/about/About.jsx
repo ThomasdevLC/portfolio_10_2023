@@ -6,6 +6,7 @@ import homeFr from "../../data/homeText/homeFr";
 import homeEn from "../../data/homeText/homeEn";
 import { LangContext } from "../../context/LangContext";
 import Banner from "../../components/about/Banner";
+import BackArrow from "../../utils/BackArrow";
 
 const About = () => {
   const { switchLang } = useContext(LangContext);
@@ -73,6 +74,7 @@ const About = () => {
       <div className="intro__banner">
         <Banner />
       </div>
+      <BackArrow />
     </div>
   );
 };
