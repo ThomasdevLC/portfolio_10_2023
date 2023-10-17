@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
 import { LangProvider } from "./context/LangContext";
 
 import Home from "./pages/home/Home";
@@ -39,19 +40,21 @@ function App() {
 
   return (
     <div className="main-app">
-      <LangProvider>
-        <div className="cursor"></div>
-        <Routes>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="/about" element={<About />}></Route>
-          <Route path="/bikeshop/:id" element={<BikeShop />}></Route>
-          <Route path="/ferme-rougeraie/:id" element={<FermeRougeraie />}></Route>
-          <Route path="/groupomania/:id" element={<Groupomania />}></Route>
-          <Route path="/kasa/:id" element={<Kasa />}></Route>
-          <Route path="/gca/:id" element={<Gca />}></Route>
-          <Route path="*" element={<Home />}></Route>{" "}
-        </Routes>
-      </LangProvider>
+      <AnimatePresence mode="wait">
+        <LangProvider>
+          <div className="cursor"></div>
+          <Routes location={location} key={location.pathname}>
+            <Route path="/" element={<Home />}></Route>
+            <Route path="/about" element={<About />}></Route>
+            <Route path="/bikeshop/:id" element={<BikeShop />}></Route>
+            <Route path="/ferme-rougeraie/:id" element={<FermeRougeraie />}></Route>
+            <Route path="/groupomania/:id" element={<Groupomania />}></Route>
+            <Route path="/kasa/:id" element={<Kasa />}></Route>
+            <Route path="/gca/:id" element={<Gca />}></Route>
+            <Route path="*" element={<Home />}></Route>{" "}
+          </Routes>
+        </LangProvider>
+      </AnimatePresence>
     </div>
   );
 }

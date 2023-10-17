@@ -2,6 +2,7 @@ import WorksComponent from "../../components/works/WorksComponent";
 import bike_anim from "../../assets/images/bike_anim.webp";
 import bike_final from "../../assets/images/bike_final.webp";
 import bike_shop from "../../assets/images/bike_shop.webp";
+import Transition from "../../utils/Transition";
 
 const BikeShop = () => {
   return (
@@ -17,4 +18,6 @@ const BikeShop = () => {
   );
 };
 
-export default BikeShop;
+const WrappedBikeShop = Transition(BikeShop);
+
+export default WrappedBikeShop;
