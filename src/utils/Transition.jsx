@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 
-const Transition = (Component) => {
+const Transition = (OgComponent) => {
   return () => (
     <>
-      <Component />
+      <OgComponent />
       <motion.div
         className="slide-in"
         initial={{ scaleY: 0 }}

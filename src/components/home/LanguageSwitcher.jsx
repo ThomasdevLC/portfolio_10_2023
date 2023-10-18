@@ -21,7 +21,7 @@ const LanguageSwitcher = () => {
   };
 
   return (
-    <nav className="lang" onClick={() => toggleLanguage()}>
+    <nav className="lang blur" onClick={() => toggleLanguage()}>
       <ul className="lang__nav">
         <div className={`lang__nav__btn ${switchLang === "en" ? "lang__nav__mode-selected" : ""}`}>
           <img src={fr} alt="photo" />

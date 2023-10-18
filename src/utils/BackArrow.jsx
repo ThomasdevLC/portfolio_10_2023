@@ -6,7 +6,7 @@ const BackArrow = () => {
     <NavLink to="/">
       <div className="back">
         <img className="back__arrow" src={backArrow} alt="fleche retour" />
-        <span className="back__text">RETOUR</span>
+        <span className="back__text blur">RETOUR</span>
       </div>
     </NavLink>
   );

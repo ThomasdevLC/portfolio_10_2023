@@ -17,6 +17,7 @@ function App() {
   useEffect(() => {
     let mouseCursor = document.querySelector(".cursor");
     let menuTitles = document.querySelectorAll(".menu__item__name");
+    let blurElements = document.querySelectorAll(".blur, img");
 
     const cursor = (e) => {
       mouseCursor.style.top = e.pageY + "px";
@@ -35,6 +36,18 @@ function App() {
     });
     if (location.pathname !== "/") {
       mouseCursor.classList.remove("link-grow");
+    }
+
+    blurElements.forEach((element) => {
+      element.addEventListener("mouseleave", () => {
+        mouseCursor.classList.remove("blur-cursor");
+      });
+      element.addEventListener("mouseover", () => {
+        mouseCursor.classList.add("blur-cursor");
+      });
+    });
+    if (location.pathname !== "/") {
+      mouseCursor.classList.remove("blur-cursor");
     }
   }, [location]);
 

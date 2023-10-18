@@ -29,6 +29,10 @@
     &__about {
       font-family: var(--font-text);
       font-size: 18px;
+
+      &:hover {
+        color: var(--primary);
+      }
     }
   }
 }

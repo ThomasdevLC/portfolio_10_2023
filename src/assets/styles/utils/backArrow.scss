@@ -10,5 +10,8 @@
 
   &__text {
     padding-left: 10px;
+    &:hover {
+      color: var(--primary);
+    }
   }
 }
