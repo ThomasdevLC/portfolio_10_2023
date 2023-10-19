@@ -1,0 +1,29 @@
+.split-word {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.split-first-level-char {
+  display: inline-block;
+  overflow: hidden;
+}
+.split-second-level-char {
+  overflow: hidden;
+  display: inline-block;
+  transform: translate3d(-140%, 0, 0);
+  animation: slideInOut 1s ease forwards;
+  animation-delay: 0.1s;
+}
+
+@keyframes slideInOut {
+  0% {
+    opacity: 1;
+    transform: translate3d(-120%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0%, 0, 0);
+  }
+}

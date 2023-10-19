@@ -4,6 +4,7 @@ import { LangContext } from "../../context/LangContext";
 import worklistFr from "../../worklist/worklistData";
 import worklistEn from "../../worklist/worklistDataEn";
 import BackArrow from "../../utils/BackArrow";
+import WorksTitle from "./WorksTitle";
 
 const WorksComponent = () => {
   const params = useParams();
@@ -22,7 +23,8 @@ const WorksComponent = () => {
         {project && (
           <>
             <h1 className="container__title">
-              <span className="container__title__span">{project.title}</span>
+              {" "}
+              <WorksTitle title={project.title} />
             </h1>
             <div className="project">
               <p className="project__intro">{project.intro}</p>
