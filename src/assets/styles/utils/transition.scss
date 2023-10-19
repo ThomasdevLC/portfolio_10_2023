@@ -1,14 +1,3 @@
-.slide-in {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background: var(--secondary);
-  transform-origin: bottom;
-  z-index: 999;
-}
-
 .slide-out {
   position: fixed;
   top: 0;
@@ -16,6 +5,27 @@
   width: 100%;
   height: 100vh;
   background: var(--secondary);
-  transform-origin: top;
+  transform-origin: left; /* Utilisez "left" au lieu de "top" comme point d'origine de la transformation */
   z-index: 999;
+}
+.slide-out-inner {
+  background: var(--primary);
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 50px;
+  animation: widthAnimation 1.2s forwards;
+}
+
+@keyframes widthAnimation {
+  0% {
+    width: 50px;
+  }
+  50% {
+    width: 1000px;
+  }
+  100% {
+    width: 50px;
+  }
 }

@@ -1,5 +1,5 @@
-.overlay {
-  background-color: #dcff7c;
+.intro-overlay {
+  // background-color: #dcff7c;
   width: 100%;
   height: 100vh;
   position: absolute;
@@ -9,9 +9,8 @@
 
 .block {
   position: fixed;
-  width: 5%;
   height: 100vh;
-  background: black;
+  background: var(--primary);
 }
 
 .block-1 {

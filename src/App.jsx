@@ -10,6 +10,7 @@ import Groupomania from "./pages/works/Groupomania";
 import Kasa from "./pages/works/Kasa";
 import Gca from "./pages/works/Gca";
 import About from "./pages/about/About";
+import Intro from "./utils/Intro";
 
 function App() {
   const location = useLocation();
@@ -56,6 +57,7 @@ function App() {
       <AnimatePresence mode="wait">
         <LangProvider>
           <div className="cursor"></div>
+
           <Routes location={location} key={location.pathname}>
             <Route path="/" element={<Home />}></Route>
             <Route path="/about" element={<About />}></Route>
