@@ -14,18 +14,17 @@
   top: 0;
   right: 0;
   height: 100%;
-  width: 50px;
-  animation: widthAnimation 1.2s forwards;
+  animation: widthAnimation 1.3s forwards ease-in-out;
 }
 
 @keyframes widthAnimation {
   0% {
-    width: 50px;
+    width: 10%;
   }
   50% {
-    width: 1000px;
+    width: 100%;
   }
   100% {
-    width: 50px;
+    width: 10%;
   }
 }
