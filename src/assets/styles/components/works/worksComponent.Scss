@@ -45,7 +45,6 @@
   }
 
   &__intro {
-    margin-top: 50px;
     font-size: 26px;
     line-height: 38px;
 
@@ -87,6 +86,7 @@
     &__th {
       border-left: 1px solid var(--text-color);
       border-right: 1px solid var(--text-color);
+      font-family: var(--font-text);
       @include mixin.sm {
         font-size: 14px;
       }
@@ -94,6 +94,8 @@
     &__td {
       border-left: 1px solid var(--text-color);
       border-right: 1px solid var(--text-color);
+      font-size: 18px;
+      line-height: 24px;
 
       @include mixin.sm-lt {
         font-size: 12px;

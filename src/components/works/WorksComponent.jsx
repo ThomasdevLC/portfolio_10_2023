@@ -46,14 +46,14 @@ const WorksComponent = () => {
                 <table>
                   <thead>
                     <tr>
-                      <th>DATE</th>
+                      <th className="project__table__th">DATE</th>
                       <th className="project__table__th">STACK</th>
-                      <th>LIENS</th>
+                      <th className="project__table__th">LIENS</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td>{project.period}</td>
+                      <td className="project__table__td">{project.period}</td>
                       <td className="project__table__td">
                         <ul>
                           {project.tags.map((tag, index) => (
