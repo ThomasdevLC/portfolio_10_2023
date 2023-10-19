@@ -18,7 +18,7 @@ function App() {
   useEffect(() => {
     let mouseCursor = document.querySelector(".cursor");
     let menuTitles = document.querySelectorAll(".menu__item__name");
-    let blurElements = document.querySelectorAll(".blur, img");
+    let blurElements = document.querySelectorAll(".blur, img,.project__table__td__link--btn");
 
     const cursor = (e) => {
       mouseCursor.style.top = e.pageY + "px";
@@ -47,6 +47,7 @@ function App() {
         mouseCursor.classList.add("blur-cursor");
       });
     });
+
     return () => {
       mouseCursor.classList.remove("blur-cursor");
     };

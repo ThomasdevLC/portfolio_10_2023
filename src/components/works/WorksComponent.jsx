@@ -12,6 +12,18 @@ const WorksComponent = () => {
   const { switchLang } = useContext(LangContext);
   const [project, setProject] = useState(null);
 
+  const [link, setLink] = useState(null);
+
+  useEffect(() => {
+    if (project && project.title) {
+      if (project.title === "FERME LA ROUGERAIE") {
+        setLink("VISITER SITE ADMIN");
+      } else if (project.title === "GCA") {
+        setLink("VISITER SITE 2");
+      }
+    }
+  }, [project]);
+
   useEffect(() => {
     const selectedProject = (switchLang === "fr" ? worklistFr : worklistEn).find((w) => w.id === projectId);
     setProject(selectedProject);
@@ -36,7 +48,7 @@ const WorksComponent = () => {
                     <tr>
                       <th>DATE</th>
                       <th className="project__table__th">STACK</th>
-                      <th>URL</th>
+                      <th>LIENS</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -50,14 +62,14 @@ const WorksComponent = () => {
                         </ul>
                       </td>
                       <td className="project__table__td__link">
-                        <div>
+                        <div className="project__table__td__link--btn">
                           <a href={project.url} target="_blank" rel="noreferrer">
-                            {project.url}
+                            VISITER SITE
                           </a>
                         </div>
-                        <div>
+                        <div className="project__table__td__link--btn">
                           <a href={project.url2} target="_blank" rel="noreferrer">
-                            {project.url2}
+                            {link}
                           </a>
                         </div>
                       </td>
