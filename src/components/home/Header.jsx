@@ -1,7 +1,12 @@
+import { useContext } from "react";
+
 import { NavLink } from "react-router-dom";
 import LanguageSwitcher from "./LanguageSwitcher";
+import { LangContext } from "../../context/LangContext";
 
 const Header = () => {
+  const { switchLang } = useContext(LangContext);
+
   return (
     <div className="header-container">
       <div className="header">
@@ -14,7 +19,7 @@ const Header = () => {
             <LanguageSwitcher />
           </div>
           <NavLink to="/about">
-            <p className="header__right__about blur">A propos</p>
+            {switchLang === "fr" ? <p className="header__right__about blur">A propos</p> : <p className="header__right__about blur">About</p>}
           </NavLink>
         </div>
       </div>
