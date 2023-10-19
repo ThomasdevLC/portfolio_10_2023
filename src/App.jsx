@@ -46,9 +46,9 @@ function App() {
         mouseCursor.classList.add("blur-cursor");
       });
     });
-    if (location.pathname !== "/") {
+    return () => {
       mouseCursor.classList.remove("blur-cursor");
-    }
+    };
   }, [location]);
 
   return (

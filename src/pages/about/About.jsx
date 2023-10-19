@@ -44,7 +44,7 @@ const About = () => {
         </div>
 
         <div className="intro__left__cv">
-          <a className="intro__left__cv__link" href={switchLang === "fr" ? cvfr : cven} target="_blank" rel="noreferrer">
+          <a className="intro__left__cv__link blur" href={switchLang === "fr" ? cvfr : cven} target="_blank" rel="noreferrer">
             {switchLang === "fr" ? "MON CV" : "MY CV"}
           </a>
         </div>
