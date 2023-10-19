@@ -1,12 +1,23 @@
 @use "../../mixins" as mixin;
 
 .intro {
-  padding: 60px;
+  padding: 120px 60px 60px 60px;
   display: flex;
   gap: 60px;
-  height: 100vh;
+
+  @include mixin.xxl-lt {
+    padding: 60px;
+  }
+  @include mixin.xl-lt {
+    padding: 60px 280px;
+    flex-direction: column;
+  }
   &__left {
     width: 50%;
+
+    @include mixin.xl-lt {
+      width: 100%;
+    }
     &__pic {
       background: var(--text-color);
       border-radius: 50%;
@@ -18,6 +29,12 @@
       align-items: center;
       overflow: hidden;
       margin-bottom: 60px;
+
+      @include mixin.xxl-lt {
+        height: 165x;
+        width: 165px;
+        margin-bottom: 20px;
+      }
 
       & img {
         height: 100%;
@@ -40,6 +57,10 @@
       line-height: 30px;
       font-weight: 400;
       margin: 20px 0 20px 0;
+
+      @include mixin.xxl-lt {
+        font-size: 18px;
+      }
     }
     &__city {
       font-size: 21px;
@@ -49,45 +70,45 @@
       font-size: 18px;
       line-height: 24px;
     }
-    &__socials {
-      margin: 30px 0 30px 0;
+
+    &__bottom {
       display: flex;
-      gap: 10px;
-
-      & i {
-        font-size: 20px;
+      justify-content: space-between;
+      align-items: center;
+      margin: 30px 0 30px 0;
+      &__socials {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 35px;
-        height: 35px;
-        border: 1px solid;
-        border-radius: 50%;
-        padding: 15px;
+        gap: 10px;
 
-        //   &:hover {
-        //     cursor: pointer;
-        //     background-color: var(--gray-2);
-        //     color: var(--gray-3);
-        //   }
+        & i {
+          font-size: 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 35px;
+          height: 35px;
+          border: 1px solid;
+          border-radius: 50%;
+          padding: 15px;
+        }
       }
-    }
 
-    &__cv {
-      &__link {
-        display: block;
-        font-family: var(--font-title);
-        font-size: 18px;
-        text-align: center;
-        padding: 12px 14px;
-        width: 200px;
-        border-radius: 35px;
-        border: 1px solid var(--primary);
-        color: var(--primary);
+      &__cv {
+        &__link {
+          display: block;
+          font-family: var(--font-title);
+          font-size: 18px;
+          text-align: center;
+          padding: 12px 14px;
+          width: 200px;
+          border-radius: 35px;
+          border: 1px solid var(--primary);
+          color: var(--primary);
 
-        &:hover {
-          background-color: var(--primary);
-          color: var(--secondary);
+          &:hover {
+            background-color: var(--primary);
+            color: var(--secondary);
+          }
         }
       }
     }
@@ -106,6 +127,9 @@
       font-size: 36px;
       -webkit-text-stroke: 1px var(--text-color);
       color: var(--secondary);
+      @include mixin.xxl-lt {
+        font-size: 32px;
+      }
     }
   }
 }

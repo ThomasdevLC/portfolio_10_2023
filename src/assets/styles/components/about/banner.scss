@@ -1,8 +1,8 @@
 .banner {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
-  height: 100vh;
+  height: 100%;
   padding: 0 10px;
   display: flex;
   border-left: 1px solid var(--text-color);

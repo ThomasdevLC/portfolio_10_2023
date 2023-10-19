@@ -31,22 +31,24 @@ const About = () => {
           06 43 84 36 32 <br />
           thomas.lecam@gmail.com
         </p>
-        <div className="intro__left__socials">
-          <a href="https://www.linkedin.com/in/thomaslecam/" target="_blank" rel="noreferrer">
-            <i className="fa-brands fa-linkedin-in"></i>
-          </a>
-          <a href="https://github.com/ThomasdevLC" target="_blank" rel="noreferrer">
-            <i className="fa-brands fa-github"></i>
-          </a>
-          <a href="mailto:thomas.lecam@gmail.com" target="_blank" rel="noreferrer">
-            <i className="fa-regular fa-envelope"></i>
-          </a>
-        </div>
+        <div className="intro__left__bottom">
+          <div className="intro__left__bottom__socials">
+            <a href="https://www.linkedin.com/in/thomaslecam/" target="_blank" rel="noreferrer">
+              <i className="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/ThomasdevLC" target="_blank" rel="noreferrer">
+              <i className="fa-brands fa-github"></i>
+            </a>
+            <a href="mailto:thomas.lecam@gmail.com" target="_blank" rel="noreferrer">
+              <i className="fa-regular fa-envelope"></i>
+            </a>
+          </div>
 
-        <div className="intro__left__cv">
-          <a className="intro__left__cv__link blur" href={switchLang === "fr" ? cvfr : cven} target="_blank" rel="noreferrer">
-            {switchLang === "fr" ? "MON CV" : "MY CV"}
-          </a>
+          <div className="intro__left__bottom__cv">
+            <a className="intro__left__bottom__cv__link blur" href={switchLang === "fr" ? cvfr : cven} target="_blank" rel="noreferrer">
+              {switchLang === "fr" ? "MON CV" : "MY CV"}
+            </a>
+          </div>
         </div>
       </div>
 

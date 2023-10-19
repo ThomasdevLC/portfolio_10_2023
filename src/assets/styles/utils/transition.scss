@@ -5,7 +5,7 @@
   width: 100%;
   height: 100vh;
   background: var(--secondary);
-  transform-origin: left; /* Utilisez "left" au lieu de "top" comme point d'origine de la transformation */
+  transform-origin: left;
   z-index: 999;
 }
 .slide-out-inner {
@@ -19,7 +19,7 @@
 
 @keyframes widthAnimation {
   0% {
-    width: 10%;
+    width: 1%;
   }
   50% {
     width: 100%;

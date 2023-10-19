@@ -53,7 +53,7 @@
 }
 
 @mixin xxl-lt {
-  @media (max-width: 1910px) {
+  @media (max-width: 1700px) {
     @content;
   }
 }
