@@ -3,9 +3,20 @@
 .menu {
   padding: 40px 0 0 40px;
 
+  @include mixin.xs {
+    padding: 40px 20px 20px 20px;
+  }
+
   &__item {
     margin-bottom: 30px;
     width: max-content;
+    @include mixin.xl-lt {
+      width: auto;
+      margin-bottom: 60px;
+    }
+    @include mixin.xs {
+      margin-bottom: 25px;
+    }
 
     &__name {
       display: inline-block;
@@ -16,6 +27,14 @@
       color: var(--secondary);
       transition: color 0.3s, -webkit-text-stroke 0.3s;
       word-wrap: break-word;
+
+      @include mixin.xl-lt {
+        font-size: 62px;
+      }
+      @include mixin.xs {
+        font-size: 30px;
+        line-height: 55px;
+      }
 
       &:hover {
         color: var(--text-color);
@@ -29,6 +48,10 @@
       gap: 10px;
       pointer-events: none;
       opacity: 0;
+
+      @include mixin.xl-lt {
+        display: none;
+      }
 
       &__name {
         height: 25px;
