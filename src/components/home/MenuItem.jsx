@@ -14,7 +14,7 @@ const MenuItem = ({ project, index }) => {
     menuItems.current.forEach((menu, index) => {
       menu.addEventListener("mouseenter", () => handleMouseEnter(index));
       menu.addEventListener("mouseleave", () => handleMouseLeave(index));
-      menu.addEventListener("mousemove", () => handleMouseMove(index));
+      //   menu.addEventListener("mousemove", () => handleMouseMove(index));
     });
   });
 
@@ -36,17 +36,17 @@ const MenuItem = ({ project, index }) => {
     });
   };
 
-  const handleMouseMove = (index) => {
-    menuItems.current[index].addEventListener("mousemove", (event) => {
-      const x = Math.min(500, event.clientX); // Limiter x à 500 au maximum
-      const imageWrapperBounds = imageWrapper.current[index].getBoundingClientRect();
-      const itembounds = menuItems.current[index].getBoundingClientRect();
-      gsap.to(imageWrapper.current[index], {
-        duration: 1.25,
-        x: Math.abs(x - itembounds.left) - imageWrapperBounds.width / 1.55,
-      });
-    });
-  };
+  //   const handleMouseMove = (index) => {
+  //     menuItems.current[index].addEventListener("mousemove", (event) => {
+  //       const x = Math.min(500, event.clientX);
+  //       const imageWrapperBounds = imageWrapper.current[index].getBoundingClientRect();
+  //       const itembounds = menuItems.current[index].getBoundingClientRect();
+  //       gsap.to(imageWrapper.current[index], {
+  //         duration: 1.25,
+  //         x: Math.abs(x - itembounds.left) - imageWrapperBounds.width / 1.55,
+  //       });
+  //     });
+  //   };
 
   return (
     <div className="menu__item">

@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import { LangProvider } from "./context/LangContext";
+import { initCursorEffects } from "./utils/cursor"; // Importez la fonction
 
 import Home from "./pages/home/Home";
 import BikeShop from "./pages/works/BikeShop";
@@ -16,41 +17,8 @@ function App() {
   const location = useLocation();
 
   useEffect(() => {
-    let mouseCursor = document.querySelector(".cursor");
-    let menuTitles = document.querySelectorAll(".menu__item__name");
-    let blurElements = document.querySelectorAll(".blur, img,.project__table__td__link--btn");
-
-    const cursor = (e) => {
-      mouseCursor.style.top = e.pageY + "px";
-      mouseCursor.style.left = e.pageX + "px";
-    };
-
-    window.addEventListener("mousemove", cursor);
-
-    menuTitles.forEach((title) => {
-      title.addEventListener("mouseleave", () => {
-        mouseCursor.classList.remove("link-grow");
-      });
-      title.addEventListener("mouseover", () => {
-        mouseCursor.classList.add("link-grow");
-      });
-    });
-    if (location.pathname !== "/") {
-      mouseCursor.classList.remove("link-grow");
-    }
-
-    blurElements.forEach((element) => {
-      element.addEventListener("mouseleave", () => {
-        mouseCursor.classList.remove("blur-cursor");
-      });
-      element.addEventListener("mouseover", () => {
-        mouseCursor.classList.add("blur-cursor");
-      });
-    });
-
-    return () => {
-      mouseCursor.classList.remove("blur-cursor");
-    };
+    const cleanup = initCursorEffects(location);
+    return cleanup;
   }, [location]);
 
   return (
