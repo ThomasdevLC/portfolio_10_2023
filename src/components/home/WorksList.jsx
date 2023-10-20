@@ -1,6 +1,6 @@
 import { useRef, useEffect } from "react";
-import { NavLink } from "react-router-dom";
 import worklist from "../../worklist/worklistData";
+import MenuItem from "./MenuItem";
 
 const WorksList = () => {
   const { gsap } = window;
@@ -37,27 +37,9 @@ const WorksList = () => {
 
   return (
     <div className="menu">
-      {worklist.map((project, index) => {
-        return (
-          <div className="menu__item" key={project.id}>
-            <div className="menu__item_image_wrapper" ref={(el) => (imageWrapper.current[index] = el)}>
-              <img className="menu__item_image_inner" src={project.image} alt={project.title} />
-            </div>
-            <NavLink to={`/${project.link}/${project.id}`}>
-              <p className="menu__item__name" ref={(el) => (menuItems.current[index] = el)}>
-                {project.title}
-              </p>
-            </NavLink>
-            <div className="menu__item__tag">
-              {project.tags.map((tag, tagIndex) => (
-                <span key={tagIndex} className="menu__item__tag__name">
-                  {tag}
-                </span>
-              ))}
-            </div>
-          </div>
-        );
-      })}
+      {worklist.map((project, index) => (
+        <MenuItem key={project.id} project={project} index={index} imageWrapperRef={imageWrapper} menuItemsRef={menuItems} />
+      ))}
     </div>
   );
 };

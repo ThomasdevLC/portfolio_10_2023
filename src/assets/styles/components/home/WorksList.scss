@@ -5,12 +5,13 @@
 
   &__item {
     margin-bottom: 30px;
-    // width: max-content;
+    width: max-content;
 
     &__name {
       display: inline-block;
       font-family: var(--font-title);
-      font-size: 68px;
+      font-size: 80px;
+      line-height: 100px;
       -webkit-text-stroke: 1px var(--text-color);
       color: var(--secondary);
       transition: color 0.3s, -webkit-text-stroke 0.3s;
@@ -27,6 +28,7 @@
       flex-wrap: wrap;
       gap: 10px;
       pointer-events: none;
+      opacity: 0;
 
       &__name {
         height: 25px;
@@ -60,4 +62,9 @@
   width: 100%;
   object-fit: cover;
   z-index: 0;
+}
+
+.menu__item:hover .menu__item__tag {
+  opacity: 1;
+  transition: opacity 0.3s;
 }
