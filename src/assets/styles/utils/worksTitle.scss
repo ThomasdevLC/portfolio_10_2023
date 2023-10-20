@@ -6,7 +6,7 @@
   align-items: center;
   gap: 30px;
 
-  @include mixin.xs {
+  @include mixin.md-lt {
     gap: 5px;
     display: flex;
     flex-direction: column;

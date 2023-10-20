@@ -10,8 +10,12 @@
   justify-content: center;
   align-items: center;
 
-  @include mixin.xs {
+  @include mixin.md-lt {
     position: absolute;
+    top: 55px;
+    left: 60px;
+  }
+  @include mixin.xs {
     top: 20px;
     left: 100px;
   }
