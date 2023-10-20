@@ -38,8 +38,7 @@ const MenuItem = ({ project, index }) => {
 
   const handleMouseMove = (index) => {
     menuItems.current[index].addEventListener("mousemove", (event) => {
-      const x = event.clientX;
-
+      const x = Math.min(500, event.clientX); // Limiter x à 500 au maximum
       const imageWrapperBounds = imageWrapper.current[index].getBoundingClientRect();
       const itembounds = menuItems.current[index].getBoundingClientRect();
       gsap.to(imageWrapper.current[index], {
