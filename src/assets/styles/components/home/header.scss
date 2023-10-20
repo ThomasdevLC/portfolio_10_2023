@@ -1,3 +1,5 @@
+@use "../../mixins" as mixin;
+
 .header-container {
   border-bottom: 1px solid var(--text-color);
   // position: fixed;
@@ -10,16 +12,29 @@
   display: flex;
   justify-content: space-between;
 
+  @include mixin.xs {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
   &__left {
     &__name {
       font-family: var(--font-text);
       font-size: 25px;
       font-weight: 800;
       padding-bottom: 10px;
+      @include mixin.xs {
+        font-size: 24px;
+      }
     }
     &__position {
       font-size: 18px;
       font-weight: 400;
+      @include mixin.xs {
+        text-align: center;
+      }
     }
   }
   &__right {
