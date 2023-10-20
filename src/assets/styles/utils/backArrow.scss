@@ -1,3 +1,5 @@
+@use "../mixins" as mixin;
+
 .back {
   position: fixed;
   top: 60px;
@@ -7,6 +9,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @include mixin.xs {
+    position: absolute;
+    top: 20px;
+    left: 100px;
+  }
 
   &__arrow {
     width: 60px;

@@ -1,8 +1,18 @@
+@use "../mixins" as mixin;
+
 .split-word {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 30px;
+
+  @include mixin.xs {
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1;
+  }
 }
 
 .split-first-level-char {
