@@ -1,10 +1,13 @@
 import { useContext } from "react";
+import { LangContext } from "../../context/LangContext";
 import pic from "../../assets/images/pic.png";
+import gmail from "../../assets/images/gmail.png";
+import linkedin from "../../assets/images/linkedin.png";
+import git from "../../assets/images/git.png";
 import cvfr from "../../assets/pdf/cvfr.pdf";
 import cven from "../../assets/pdf/cven.pdf";
 import homeFr from "../../data/homeText/homeFr";
 import homeEn from "../../data/homeText/homeEn";
-import { LangContext } from "../../context/LangContext";
 import Banner from "../../components/about/Banner";
 import BackArrow from "../../utils/BackArrow";
 
@@ -33,14 +36,14 @@ const About = () => {
         </p>
         <div className="intro__left__bottom">
           <div className="intro__left__bottom__socials">
-            <a href="https://www.linkedin.com/in/thomaslecam/" target="_blank" rel="noreferrer">
-              <i className="fa-brands fa-linkedin-in"></i>
+            <a href="https://www.linkedin.com/in/thomaslecam/" target="_blank" rel="noreferrer" className="intro__left__bottom__socials--link">
+              <img src={linkedin} alt="lien linkedin" />
             </a>
-            <a href="https://github.com/ThomasdevLC" target="_blank" rel="noreferrer">
-              <i className="fa-brands fa-github"></i>
+            <a href="https://www.linkedin.com/in/thomaslecam/" target="_blank" rel="noreferrer" className="intro__left__bottom__socials--link">
+              <img src={git} alt="lien linkedin" />
             </a>
-            <a href="mailto:thomas.lecam@gmail.com" target="_blank" rel="noreferrer">
-              <i className="fa-regular fa-envelope"></i>
+            <a href="https://www.linkedin.com/in/thomaslecam/" target="_blank" rel="noreferrer" className="intro__left__bottom__socials--link">
+              <img src={gmail} alt="lien linkedin" />
             </a>
           </div>
 

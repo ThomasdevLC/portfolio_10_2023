@@ -16,13 +16,17 @@ const WorksComponent = () => {
 
   useEffect(() => {
     if (project && project.title) {
-      if (project.title === "FERME LA ROUGERAIE") {
-        setLink("VISITER SITE ADMIN");
-      } else if (project.title === "GCA") {
-        setLink("VISITER SITE 2");
+      switch (project.title) {
+        case "FERME LA ROUGERAIE":
+          setLink(switchLang === "fr" ? "VISITER SITE ADMIN" : "VISIT ADMIN SITE");
+          break;
+        case "GCA":
+          setLink(switchLang === "fr" ? "VISITER SITE 2" : "VISIT SITE 2");
+          break;
+        default:
       }
     }
-  }, [project]);
+  }, [project, switchLang]);
 
   useEffect(() => {
     const selectedProject = (switchLang === "fr" ? worklistFr : worklistEn).find((w) => w.id === projectId);
@@ -64,12 +68,12 @@ const WorksComponent = () => {
                       <td className="project__table__td__link">
                         <div className="project__table__td__link--btn">
                           <a href={project.url} target="_blank" rel="noreferrer">
-                            VISITER SITE
+                            {switchLang === "fr" ? <span>VISITER SITE</span> : <span>VISIT SITE</span>}
                           </a>
                         </div>
                         <div className="project__table__td__link--btn">
                           <a href={project.url2} target="_blank" rel="noreferrer">
-                            {link}
+                            <span>{link}</span>
                           </a>
                         </div>
                       </td>

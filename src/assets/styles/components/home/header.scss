@@ -15,6 +15,7 @@
       font-family: var(--font-text);
       font-size: 25px;
       font-weight: 800;
+      padding-bottom: 10px;
     }
     &__position {
       font-size: 18px;
@@ -23,12 +24,13 @@
   }
   &__right {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    // flex-direction: column;
+    // justify-content: space-between;
     gap: 10px;
     &__about {
       font-family: var(--font-text);
       font-size: 18px;
+      line-height: 30px;
 
       &:hover {
         color: var(--primary);

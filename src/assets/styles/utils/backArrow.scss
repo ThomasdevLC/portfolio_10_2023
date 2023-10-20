@@ -8,6 +8,9 @@
   justify-content: center;
   align-items: center;
 
+  &__arrow {
+    width: 60px;
+  }
   &__text {
     padding-left: 10px;
     &:hover {
