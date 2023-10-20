@@ -11,11 +11,25 @@
   @include mixin.xl-lt {
     padding: 60px 280px;
     flex-direction: column;
+    width: 100%;
+    @include mixin.lg-lt {
+      padding: 60px 120px 60px 60px;
+      margin: auto;
+    }
+    @include mixin.xs {
+      padding: 80px 30px 30px 30px;
+      margin: auto;
+    }
+  }
+
+  &__banner {
+    @include mixin.xs {
+      display: none;
+    }
   }
   &__left {
     width: 50%;
-
-    @include mixin.xl-lt {
+    @include mixin.lg-lt {
       width: 100%;
     }
     &__pic {
@@ -76,6 +90,10 @@
       justify-content: space-between;
       align-items: center;
       margin: 30px 0 30px 0;
+
+      @include mixin.xs {
+        flex-direction: column;
+      }
       &__socials {
         display: flex;
         gap: 15px;
@@ -90,6 +108,9 @@
       }
 
       &__cv {
+        @include mixin.xs {
+          margin-top: 30px;
+        }
         &__link {
           display: block;
           font-family: var(--font-title);
