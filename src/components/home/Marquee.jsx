@@ -14,7 +14,7 @@ const Marquee = () => {
   }, [switchLang]);
   return (
     <div>
-      <div className="marquee">
+      <div className="marquee blur">
         <div className="marquee__wrapper">
           &nbsp;{devText} <span className="marquee-dot"></span> portfolio 2023<span className="marquee-dot"></span>
           {devText} <span className="marquee-dot"></span> portfolio 2023<span className="marquee-dot"></span>

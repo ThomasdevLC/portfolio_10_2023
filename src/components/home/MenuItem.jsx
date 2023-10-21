@@ -6,10 +6,12 @@ const MenuItem = ({ project, index }) => {
   const { gsap } = window;
   const menuItems = useRef([]);
   const imageWrapper = useRef([]);
+  const tagsRef = useRef([]);
 
   useEffect(() => {
     menuItems.current = menuItems.current.map((item) => item);
     imageWrapper.current = imageWrapper.current.map((item) => item);
+    tagsRef.current = tagsRef.current.map((item) => item);
 
     menuItems.current.forEach((menu, index) => {
       menu.addEventListener("mouseenter", () => handleMouseEnter(index));
@@ -25,6 +27,7 @@ const MenuItem = ({ project, index }) => {
     });
 
     gsap.to(imageWrapper.current[index], { opacity: 1, scale: 1.2, yPercent: 0, rotation: 2 });
+    gsap.to(tagsRef.current[index], { opacity: 1, duration: 0.3 });
   };
 
   const handleMouseLeave = (index) => {
@@ -34,6 +37,7 @@ const MenuItem = ({ project, index }) => {
       scale: 0.8,
       rotation: -15,
     });
+    gsap.to(tagsRef.current[index], { opacity: 0, duration: 0.3 });
   };
 
   //   const handleMouseMove = (index) => {
@@ -58,7 +62,7 @@ const MenuItem = ({ project, index }) => {
           {project.title}
         </p>
       </NavLink>
-      <div className="menu__item__tag">
+      <div className="menu__item__tag" ref={(el) => (tagsRef.current[index] = el)}>
         {project.tags.map((tag, tagIndex) => (
           <span key={tagIndex} className="menu__item__tag__name">
             {tag}

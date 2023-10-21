@@ -4,7 +4,7 @@ export function initCursorEffects(location) {
   let blurElements = document.querySelectorAll(".blur, img");
 
   const cursor = (e) => {
-    if (e.pageY >= window.innerHeight - 15 || e.pageX >= window.innerWidth - 15 || window.innerWidth < 1470) {
+    if (e.pageX >= window.innerWidth - 15 || window.innerWidth < 1200) {
       mouseCursor.style.display = "none";
     } else {
       mouseCursor.style.display = "block";
