@@ -20,11 +20,11 @@ const Header = () => {
       <div className="header">
         <div className="header__left">
           <h1 className="header__left__name blur">Thomas Le Cam</h1>
-          <h2 className="header__left__position blur">{switchLang === "fr" ? <span> Développeur Frontend</span> : <span>Frontend Developper</span>}</h2>
         </div>
-
-        <div className="header__right">
+        <div className="header__center">
           <Marquee />
+        </div>
+        <div className="header__right">
           <NavLink to="/about">
             <p className="header__right__about blur">{aboutLink} |</p>
           </NavLink>
