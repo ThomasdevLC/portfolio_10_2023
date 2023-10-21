@@ -33,6 +33,9 @@
   &__right {
     display: flex;
     gap: 10px;
+    width: 219px;
+    justify-content: flex-end;
+
     &__about {
       font-family: var(--font-text);
       font-size: 18px;
