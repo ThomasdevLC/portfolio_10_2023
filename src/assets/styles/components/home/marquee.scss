@@ -1,0 +1,33 @@
+.marquee {
+  border: 1px solid var(--text-color);
+  border-radius: 20px;
+  padding: 8px;
+  width: 300px;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-transform: uppercase;
+  &__wrapper {
+    will-change: transform;
+    animation: marquee 32s linear infinite;
+  }
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background-color: #bfff07;
+  display: inline-block;
+  border-radius: 50px;
+  position: relative;
+  margin: 0 8px;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-400%);
+  }
+}
