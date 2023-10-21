@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import { LangContext } from "../../context/LangContext";
 import LanguageSwitcher from "./LanguageSwitcher";
 import Marquee from "./Marquee";
+
 const Header = () => {
   const { switchLang } = useContext(LangContext);
   const [aboutLink, setAboutLink] = useState("");

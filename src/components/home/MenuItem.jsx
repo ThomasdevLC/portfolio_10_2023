@@ -16,46 +16,37 @@ const MenuItem = ({ project, index }) => {
     menuItems.current.forEach((menu, index) => {
       menu.addEventListener("mouseenter", () => handleMouseEnter(index));
       menu.addEventListener("mouseleave", () => handleMouseLeave(index));
-      //   menu.addEventListener("mousemove", () => handleMouseMove(index));
     });
   });
 
   const handleMouseEnter = (index) => {
-    gsap.set(imageWrapper.current[index], {
-      scale: 1,
-      rotation: -15,
-    });
+    if (window.innerWidth > 1200) {
+      gsap.set(imageWrapper.current[index], {
+        scale: 1,
+        rotation: -15,
+      });
 
-    gsap.to(imageWrapper.current[index], { opacity: 1, scale: 1.2, yPercent: 0, rotation: 2 });
-    gsap.to(tagsRef.current[index], { opacity: 1, duration: 0.3 });
+      gsap.to(imageWrapper.current[index], { opacity: 1, scale: 1.2, yPercent: 0, rotation: 2 });
+      gsap.to(tagsRef.current[index], { opacity: 1, duration: 0.3 });
+    }
   };
 
   const handleMouseLeave = (index) => {
-    gsap.to(imageWrapper.current[index], {
-      opacity: 0,
-      yPercent: -50,
-      scale: 0.8,
-      rotation: -15,
-    });
-    gsap.to(tagsRef.current[index], { opacity: 0, duration: 0.3 });
+    if (window.innerWidth > 1200) {
+      gsap.to(imageWrapper.current[index], {
+        opacity: 0,
+        yPercent: -50,
+        scale: 0.8,
+        rotation: -15,
+      });
+      gsap.to(tagsRef.current[index], { opacity: 0, duration: 0.3 });
+    }
   };
-
-  //   const handleMouseMove = (index) => {
-  //     menuItems.current[index].addEventListener("mousemove", (event) => {
-  //       const x = Math.min(500, event.clientX);
-  //       const imageWrapperBounds = imageWrapper.current[index].getBoundingClientRect();
-  //       const itembounds = menuItems.current[index].getBoundingClientRect();
-  //       gsap.to(imageWrapper.current[index], {
-  //         duration: 1.25,
-  //         x: Math.abs(x - itembounds.left) - imageWrapperBounds.width / 1.55,
-  //       });
-  //     });
-  //   };
 
   return (
     <div className="menu__item">
-      <div className="menu__item_image_wrapper" ref={(el) => (imageWrapper.current[index] = el)}>
-        <img className="menu__item_image_inner" src={project.image} alt={project.title} />
+      <div className="menu__item__image__wrapper" ref={(el) => (imageWrapper.current[index] = el)}>
+        <img className="menu__item__image__inner" src={project.image} alt={project.title} />
       </div>
       <NavLink to={`/${project.link}/${project.id}`}>
         <p className="menu__item__name" ref={(el) => (menuItems.current[index] = el)}>
