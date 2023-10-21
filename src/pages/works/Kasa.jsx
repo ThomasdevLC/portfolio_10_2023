@@ -1,6 +1,7 @@
 import WorksComponent from "../../components/works/WorksComponent";
 import kasaXl from "../../assets/images/kasa_xl.webp";
 import kasaXs from "../../assets/images/kasa_xs.webp";
+import Transition from "../../utils/Transition";
 
 const Kasa = () => {
   return (
@@ -14,4 +15,6 @@ const Kasa = () => {
   );
 };
 
-export default Kasa;
+const WrappedKasa = Transition(Kasa);
+
+export default WrappedKasa;

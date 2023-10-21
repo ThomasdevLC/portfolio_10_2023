@@ -1,6 +1,7 @@
 import WorksComponent from "../../components/works/WorksComponent";
 import pwa from "../../assets/images/pwa.webp";
 import pwa_2 from "../../assets/images/pwa_2.webp";
+import Transition from "../../utils/Transition";
 
 const Gca = () => {
   return (
@@ -14,4 +15,6 @@ const Gca = () => {
   );
 };
 
-export default Gca;
+const WrappedGca = Transition(Gca);
+
+export default WrappedGca;

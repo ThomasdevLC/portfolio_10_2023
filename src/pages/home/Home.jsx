@@ -4,7 +4,7 @@ import Transition from "../../utils/Transition";
 
 const Home = () => {
   return (
-    <div className="home-container br">
+    <div className="home-container">
       <Header />
       <WorksList />
     </div>

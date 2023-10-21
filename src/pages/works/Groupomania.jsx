@@ -1,6 +1,7 @@
 import { useState, useRef } from "react";
 import WorksComponent from "../../components/works/WorksComponent";
 import video from "../../assets/videos/groupomania-video.mp4";
+import Transition from "../../utils/Transition";
 
 const Groupomania = () => {
   const videoRef = useRef(null);
@@ -28,4 +29,6 @@ const Groupomania = () => {
   );
 };
 
-export default Groupomania;
+const WrappedGroupomania = Transition(Groupomania);
+
+export default WrappedGroupomania;
