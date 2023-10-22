@@ -5,6 +5,7 @@
 @use "./mixins";
 @use "./utils";
 @use "./variables";
+
 @use "./components/home/header.scss";
 @use "./components/home/worksList.scss";
 @use "./components/home/languageSwitcher.scss";
@@ -13,10 +14,6 @@
 @use "./components/works/worksComponent.scss";
 @use "./components/about//banner.scss";
 
-@use "./utils/backArrow.scss";
-@use "./utils/transition.scss";
-@use "./utils/worksTitle.scss";
-
 @use "./pages/home/home.scss";
 @use "./pages/about/about.scss";
 @use "./pages/works/bikeShop.scss";
@@ -24,3 +21,7 @@
 @use "./pages/works/kasa.scss";
 @use "./pages/works/gca.scss";
 @use "./pages/works/groupomania.scss";
+
+@use "./utils/backArrow.scss";
+@use "./utils/transition.scss";
+@use "./utils/worksTitle.scss";
