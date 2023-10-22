@@ -86,21 +86,16 @@
     }
 
     &__bottom {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin: 30px 0 30px 0;
+      margin-top: 20px;
 
-      @include mixin.xs {
-        flex-direction: column;
-      }
       &__socials {
         display: flex;
         gap: 15px;
+        margin-bottom: 20px;
       }
       &__socials--link {
-        height: 45px;
-        width: 45px;
+        height: 40px;
+        width: 40px;
       }
       & img {
         height: 100%;

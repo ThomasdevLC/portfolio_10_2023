@@ -39,10 +39,10 @@ const About = () => {
             <a href="https://www.linkedin.com/in/thomaslecam/" target="_blank" rel="noreferrer" className="intro__left__bottom__socials--link">
               <img src={linkedin} alt="lien linkedin" />
             </a>
-            <a href="https://www.linkedin.com/in/thomaslecam/" target="_blank" rel="noreferrer" className="intro__left__bottom__socials--link">
+            <a href="https://github.com/ThomasdevLC" target="_blank" rel="noreferrer" className="intro__left__bottom__socials--link">
               <img src={git} alt="lien linkedin" />
             </a>
-            <a href="https://www.linkedin.com/in/thomaslecam/" target="_blank" rel="noreferrer" className="intro__left__bottom__socials--link">
+            <a href="mailto:thomas.lecam@gmail.com" target="_blank" rel="noreferrer" className="intro__left__bottom__socials--link">
               <img src={gmail} alt="lien linkedin" />
             </a>
           </div>
@@ -59,16 +59,16 @@ const About = () => {
         <div className="intro__right__stack">
           <p className="intro__right__stack__title">STACK</p>
           <ul className="intro__right__stack__list">
-            <li>HTML5/CSS3</li>
+            <li>HTML5 / CSS3</li>
             <li>JAVASCRIPT</li>
             <li>REACT</li>
             <li>VUE</li>
-            <li>RESPONSIVE DESIGN</li>
+            <li>EXPRESS / NODE.JS</li>
             <li>GIT</li>
           </ul>
         </div>
         <div className="intro__right__libr">
-          <p className="intro__right__libr__title">LIBRARIES</p>
+          <p className="intro__right__libr__title">{switchLang === "fr" ? "LIBRAIRIES" : "LIBRARIES"}</p>
           <ul className="intro__right__libr__list">
             <li>SASS</li>
             <li>GSAP</li>
