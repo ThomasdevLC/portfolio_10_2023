@@ -10,6 +10,7 @@ import homeFr from "../../data/homeText/homeFr";
 import homeEn from "../../data/homeText/homeEn";
 import Banner from "../../components/about/Banner";
 import BackArrow from "../../utils/BackArrow";
+import Transition from "../../utils/Transition";
 
 const About = () => {
   const { switchLang } = useContext(LangContext);
@@ -84,4 +85,6 @@ const About = () => {
   );
 };
 
-export default About;
+const WrappedAbout = Transition(About);
+
+export default WrappedAbout;
