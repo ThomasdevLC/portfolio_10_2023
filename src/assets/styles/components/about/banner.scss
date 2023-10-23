@@ -12,6 +12,11 @@
   white-space: nowrap;
   overflow: hidden;
 
+  &__left,
+  &__right {
+    width: 30px;
+  }
+
   &__left__text,
   &__right__text {
     writing-mode: vertical-lr;

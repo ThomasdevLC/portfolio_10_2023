@@ -6,7 +6,7 @@
   gap: 60px;
 
   @include mixin.xxl-lt {
-    padding: 60px;
+    padding: 40px 60px;
   }
   @include mixin.xl-lt {
     padding: 60px 280px;
@@ -133,6 +133,7 @@
     &__stack__title,
     &__libr__title {
       color: var(--primary);
+      margin-bottom: 20px;
     }
     &__stack__list,
     &__libr__list {

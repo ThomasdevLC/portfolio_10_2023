@@ -10,7 +10,7 @@
   justify-content: center;
   align-items: center;
 
-  @include mixin.lg-lt {
+  @include mixin.xxl-lt {
     position: absolute;
     top: 55px;
     left: 60px;
