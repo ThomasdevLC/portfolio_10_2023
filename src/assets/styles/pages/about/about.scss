@@ -64,13 +64,14 @@
       padding-top: 10px;
     }
     &__position {
-      font-size: 20px;
+      font-family: var(--font-text);
+      font-size: 18px;
       font-weight: 500;
     }
     &__text {
       font-size: 21px;
       line-height: 30px;
-      font-weight: 400;
+      font-weight: 300;
       margin: 20px 0 20px 0;
 
       @include mixin.xxl-lt {
@@ -79,11 +80,12 @@
     }
     &__city {
       font-size: 21px;
-      padding-bottom: 10px;
+      line-height: 26px;
     }
     &__contact {
       font-size: 18px;
-      line-height: 24px;
+      line-height: 26px;
+      font-weight: 300;
     }
 
     &__bottom {
