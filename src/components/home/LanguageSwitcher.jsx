@@ -7,8 +7,6 @@ const LanguageSwitcher = () => {
   const { switchLang, setSwitchLang } = useContext(LangContext);
   const [canToggle, setCanToggle] = useState(true);
 
-  console.log("LanguageSwitcher", switchLang);
-
   const toggleLanguage = () => {
     if (canToggle) {
       setSwitchLang((switchLang) => (switchLang === "fr" ? "en" : "fr"));
