@@ -1,8 +1,8 @@
-import { useEffect } from "react";
+import { useEffect, useContext } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
-import { AnimatePresence } from "framer-motion";
-import { LangProvider } from "./context/LangContext";
+import { motion, AnimatePresence } from "framer-motion";
 import { initCursorEffects } from "./utils/cursor";
+import { LangContext } from "./context/LangContext";
 
 import Home from "./pages/home/Home";
 import BikeShop from "./pages/works/BikeShop";
@@ -11,22 +11,34 @@ import Groupomania from "./pages/works/Groupomania";
 import Kasa from "./pages/works/Kasa";
 import Gca from "./pages/works/Gca";
 import About from "./pages/about/About";
+import Intro from "./utils/Intro";
 
 function App() {
   const location = useLocation();
+  const { switchLang } = useContext(LangContext);
 
   useEffect(() => {
     const cleanup = initCursorEffects(location);
     return cleanup;
-  }, [location]);
+  }, [location, switchLang]);
 
   return (
     <div className="main-app br">
       <AnimatePresence mode="wait">
-        <LangProvider>
+        <>
+          <motion.div
+            className="intro"
+            initial={{ scaleX: 1 }}
+            animate={{ scaleX: 0 }}
+            exit={{ scaleX: 0 }}
+            transition={{
+              duration: 1.2,
+              ease: [0.22, 1, 0.36, 1],
+              delay: 1.2,
+            }}
+          ></motion.div>
           <div className="cursor"></div>
-
-          <Routes location={location} key={location.pathname}>
+          <Routes key={switchLang}>
             <Route path="/" element={<Home />}></Route>
             <Route path="/about" element={<About />}></Route>
             <Route path="/bikeshop/:id" element={<BikeShop />}></Route>
@@ -36,7 +48,7 @@ function App() {
             <Route path="/gca/:id" element={<Gca />}></Route>
             <Route path="*" element={<Home />}></Route>{" "}
           </Routes>
-        </LangProvider>
+        </>
       </AnimatePresence>
     </div>
   );

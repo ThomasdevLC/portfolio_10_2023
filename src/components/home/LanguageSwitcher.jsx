@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
+import { LangContext } from "../../context/LangContext";
 import fr from "../../assets/images/fr.png";
 import uk from "../../assets/images/uk.png";
-import { LangContext } from "../../context/LangContext";
 
 const LanguageSwitcher = () => {
   const { switchLang, setSwitchLang } = useContext(LangContext);
