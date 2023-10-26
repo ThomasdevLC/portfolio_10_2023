@@ -65,6 +65,10 @@
       font-size: 26px;
       font-weight: 700;
       padding: 10px 0 5px 0;
+
+      @include mixin.lg-lt {
+        font-size: 24px;
+      }
     }
     &__position {
       font-family: var(--font-text);
@@ -112,6 +116,10 @@
           border: 1px solid var(--primary);
           color: var(--primary);
           transition: all 0.3s;
+
+          @include mixin.xs {
+            width: 100%;
+          }
           &:hover {
             background-color: var(--primary);
             color: var(--secondary);
