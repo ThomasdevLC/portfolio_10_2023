@@ -21,7 +21,7 @@ function App() {
   }, [location]);
 
   return (
-    <div className="main-app">
+    <div className="main-app br">
       <AnimatePresence mode="wait">
         <LangProvider>
           <div className="cursor"></div>
