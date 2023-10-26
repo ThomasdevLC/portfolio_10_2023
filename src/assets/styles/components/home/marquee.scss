@@ -11,7 +11,7 @@
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 400;
-  @include mixin.lg-lt {
+  @include mixin.xs {
     width: 260px;
   }
 
@@ -32,7 +32,7 @@
 .marquee-dot {
   width: 8px;
   height: 8px;
-  background-color: #bfff07;
+  background-color: var(--primary);
   display: inline-block;
   border-radius: 50px;
   position: relative;

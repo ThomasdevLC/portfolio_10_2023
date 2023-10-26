@@ -22,18 +22,42 @@
       font-size: 18px;
       font-weight: 400;
       line-height: 30px;
+
       @include mixin.xs {
         font-size: 22px;
       }
+
+      & span {
+        @include mixin.md-lt {
+          display: block;
+        }
+        @include mixin.xs {
+          display: inline-block;
+        }
+      }
     }
   }
+
+  &__center {
+    @include mixin.md-lt {
+      display: flex;
+      align-items: center;
+    }
+  }
+
   &__right {
     display: flex;
     gap: 10px;
     width: 219px;
     justify-content: flex-end;
 
+    @include mixin.md-lt {
+      flex-direction: column-reverse;
+      align-items: flex-end;
+      width: auto;
+    }
     @include mixin.xs {
+      flex-direction: row;
       justify-content: center;
     }
 
@@ -45,6 +69,15 @@
 
       &:hover {
         color: var(--primary);
+      }
+
+      & span {
+        @include mixin.md-lt {
+          display: none;
+        }
+        @include mixin.xs {
+          display: inline-block;
+        }
       }
     }
   }

@@ -20,14 +20,19 @@ const Header = () => {
     <div className="header-container">
       <div className="header">
         <div className="header__left">
-          <h1 className="header__left__name blur">Thomas Le Cam</h1>
+          <h1 className="header__left__name blur">
+            {" "}
+            <span>Thomas </span> <span>Le Cam</span>{" "}
+          </h1>
         </div>
         <div className="header__center">
           <Marquee />
         </div>
         <div className="header__right">
           <NavLink to="/about">
-            <p className="header__right__about blur">{aboutLink} |</p>
+            <p className="header__right__about blur">
+              {aboutLink} <span>|</span>
+            </p>
           </NavLink>
           <div className="header__right__lang">
             <LanguageSwitcher />
