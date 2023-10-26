@@ -27,18 +27,22 @@ function App() {
       <AnimatePresence mode="wait">
         <>
           <motion.div
-            className="intro"
+            className="introLoad"
             initial={{ scaleX: 1 }}
             animate={{ scaleX: 0 }}
             exit={{ scaleX: 0 }}
             transition={{
               duration: 1.2,
               ease: [0.22, 1, 0.36, 1],
-              delay: 1.2,
+              delay: 1.8,
             }}
-          ></motion.div>
+          >
+            {" "}
+            <p className="introLoad-text">LOADING</p>
+            <div className="introLoad-inner"></div>
+          </motion.div>
           <div className="cursor"></div>
-          <Routes key={switchLang}>
+          <Routes location={location} key={location.pathname + switchLang}>
             <Route path="/" element={<Home />}></Route>
             <Route path="/about" element={<About />}></Route>
             <Route path="/bikeshop/:id" element={<BikeShop />}></Route>

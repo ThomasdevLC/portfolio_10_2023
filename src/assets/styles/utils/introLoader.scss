@@ -1,0 +1,47 @@
+@use "../anim" as mixin;
+
+.introLoad {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: var(--secondary);
+  transform-origin: left;
+  z-index: 1999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 0 1px var(--primary), 0 0 1px var(--primary), 0 0 1px var(--primary);
+}
+
+.introLoad-text {
+  -webkit-text-stroke: 1px var(--primary);
+  font-family: var(--font-title);
+  font-size: 60px;
+  color: var(--secondary);
+  animation: flicker-out-1 1.8s linear both;
+}
+
+@include mixin.flicker-out-keyframes;
+
+.introLoad-inner {
+  background: var(--primary);
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  animation: widthAnimation 1.3s forwards ease-in-out 1.7s;
+}
+
+@keyframes widthAnimation {
+  0% {
+    width: 1%;
+  }
+  50% {
+    width: 60%;
+  }
+  100% {
+    width: 10%;
+  }
+}
