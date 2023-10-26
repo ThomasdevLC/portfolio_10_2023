@@ -11,7 +11,6 @@ import Groupomania from "./pages/works/Groupomania";
 import Kasa from "./pages/works/Kasa";
 import Gca from "./pages/works/Gca";
 import About from "./pages/about/About";
-import Intro from "./utils/Intro";
 
 function App() {
   const location = useLocation();
@@ -42,7 +41,7 @@ function App() {
             <div className="introLoad-inner"></div>
           </motion.div>
           <div className="cursor"></div>
-          <Routes location={location} key={location.pathname + switchLang}>
+          <Routes key={switchLang}>
             <Route path="/" element={<Home />}></Route>
             <Route path="/about" element={<About />}></Route>
             <Route path="/bikeshop/:id" element={<BikeShop />}></Route>

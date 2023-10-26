@@ -75,10 +75,10 @@ a {
 
 .link-grow {
   background-image: url("../images/arrow_right.png");
-  background-size: 60%;
+  background-size: 50%;
   background-repeat: no-repeat;
   background-position: center;
-  transform: scale(5) rotate(-25deg);
+  transform: scale(5) rotate(-25deg) translate(-50%, -50%);
   z-index: 999;
   box-shadow: none;
 }
