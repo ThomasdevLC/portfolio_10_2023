@@ -22,7 +22,7 @@ function App() {
   }, [location, switchLang]);
 
   return (
-    <div className="main-app br">
+    <div className="main-app">
       <AnimatePresence mode="wait">
         <>
           <motion.div

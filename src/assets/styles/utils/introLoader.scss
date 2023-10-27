@@ -1,4 +1,5 @@
-@use "../anim" as mixin;
+@use "../anim" as anim-mixin;
+@use "../mixins" as mixin;
 
 .introLoad {
   position: fixed;
@@ -21,9 +22,12 @@
   font-size: 60px;
   color: var(--secondary);
   animation: flicker-out-1 1.8s linear both;
+  @include mixin.xs {
+    font-size: 40px;
+  }
 }
 
-@include mixin.flicker-out-keyframes;
+@include anim-mixin.flicker-out-keyframes;
 
 .introLoad-inner {
   background: var(--primary);

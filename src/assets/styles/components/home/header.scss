@@ -67,16 +67,17 @@
       line-height: 30px;
       transition: color 0.3s;
 
-      &:hover {
-        color: var(--primary);
-      }
-
       & span {
         @include mixin.md-lt {
           display: none;
         }
         @include mixin.xs {
           display: inline-block;
+        }
+      }
+      &__text {
+        &:hover {
+          color: var(--primary);
         }
       }
     }

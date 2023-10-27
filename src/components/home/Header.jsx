@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import { LangContext } from "../../context/LangContext";
 import LanguageSwitcher from "./LanguageSwitcher";
@@ -6,15 +6,6 @@ import Marquee from "./Marquee";
 
 const Header = () => {
   const { switchLang } = useContext(LangContext);
-  const [aboutLink, setAboutLink] = useState("");
-
-  useEffect(() => {
-    if (switchLang === "fr") {
-      setAboutLink("À propos");
-    } else {
-      setAboutLink("About");
-    }
-  }, [switchLang]);
 
   return (
     <div className="header-container">
@@ -31,7 +22,7 @@ const Header = () => {
         <div className="header__right">
           <NavLink to="/about">
             <p className="header__right__about blur">
-              {aboutLink} <span>|</span>
+              <span className="header__right__about__text">{switchLang === "fr" ? "À propos" : "About"}</span> <span>|</span>
             </p>
           </NavLink>
           <div className="header__right__lang">
