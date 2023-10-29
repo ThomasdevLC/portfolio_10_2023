@@ -21,13 +21,17 @@ const MenuItem = ({ project, index }) => {
 
   const handleMouseEnter = (index) => {
     if (window.innerWidth > 1200) {
+      const parentRight = menuItems.current[index].getBoundingClientRect().right;
+      const wrapperWidth = imageWrapper.current[index].getBoundingClientRect().width;
+
       gsap.set(imageWrapper.current[index], {
-        scale: 0.8,
-        rotation: -15,
-        yPercent: 150,
+        scale: 0.4,
+        rotation: -20,
+        yPercent: 0,
+        x: parentRight - wrapperWidth + 100,
       });
 
-      gsap.to(imageWrapper.current[index], { opacity: 1, scale: 1, yPercent: 0, rotation: 2 });
+      gsap.to(imageWrapper.current[index], { opacity: 1, scale: 0.65, yPercent: -40, x: parentRight - wrapperWidth + 140, rotation: 2 });
       gsap.to(tagsRef.current[index], { opacity: 1, duration: 0.3 });
     }
   };
@@ -36,8 +40,8 @@ const MenuItem = ({ project, index }) => {
     if (window.innerWidth > 1200) {
       gsap.to(imageWrapper.current[index], {
         opacity: 0,
-        yPercent: 100,
-        scale: 0.8,
+        yPercent: -10,
+        scale: 0.4,
         rotation: -15,
       });
       gsap.to(tagsRef.current[index], { opacity: 0, duration: 0.3 });

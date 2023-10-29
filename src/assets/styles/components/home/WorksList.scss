@@ -88,14 +88,8 @@
 
 .menu__item__image__wrapper {
   position: fixed;
-  bottom: 15%;
-  right: 5%;
   pointer-events: none;
   opacity: 0;
-
-  @include mixin.xxl-lt {
-    bottom: 5%;
-  }
 }
 
 .menu__item__image__inner .menu__item__image {
