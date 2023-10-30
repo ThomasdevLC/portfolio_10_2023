@@ -28,10 +28,10 @@ const MenuItem = ({ project, index }) => {
         scale: 0.4,
         rotation: -20,
         yPercent: 0,
-        x: parentRight - wrapperWidth + 140,
+        x: parentRight - wrapperWidth + 100,
       });
 
-      gsap.to(imageWrapper.current[index], { opacity: 1, scale: 0.65, yPercent: -40, x: parentRight - wrapperWidth + 140, rotation: 2 });
+      gsap.to(imageWrapper.current[index], { opacity: 1, scale: 0.65, yPercent: -60, rotation: 2 });
       gsap.to(tagsRef.current[index], { opacity: 1, duration: 0.3 });
     }
   };
@@ -50,9 +50,6 @@ const MenuItem = ({ project, index }) => {
 
   return (
     <div className="menu__item">
-      <div className="menu__item__image__wrapper" ref={(el) => (imageWrapper.current[index] = el)}>
-        <img className="menu__item__image__inner" src={project.image} alt={project.title} />
-      </div>
       <NavLink to={`/${project.link}/${project.id}`}>
         <p className="menu__item__name" ref={(el) => (menuItems.current[index] = el)}>
           {project.title}
@@ -64,6 +61,9 @@ const MenuItem = ({ project, index }) => {
             {tag}
           </span>
         ))}
+      </div>
+      <div className="menu__item__image__wrapper" ref={(el) => (imageWrapper.current[index] = el)}>
+        <img className="menu__item__image__inner" src={project.image} alt={project.title} />
       </div>
     </div>
   );
