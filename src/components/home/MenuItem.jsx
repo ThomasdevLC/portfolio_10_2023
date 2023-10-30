@@ -11,7 +11,6 @@ const MenuItem = ({ project, index }) => {
   useEffect(() => {
     menuItems.current = menuItems.current.map((item) => item);
     imageWrapper.current = imageWrapper.current.map((item) => item);
-    tagsRef.current = tagsRef.current.map((item) => item);
 
     menuItems.current.forEach((menu, index) => {
       menu.addEventListener("mouseenter", () => handleMouseEnter(index));
@@ -20,34 +19,23 @@ const MenuItem = ({ project, index }) => {
   });
 
   const handleMouseEnter = (index) => {
-    if (window.innerWidth > 1200) {
-      if (menuItems.current[index] && imageWrapper.current[index]) {
-        const parentRight = menuItems.current[index].getBoundingClientRect().right;
-        const wrapperWidth = imageWrapper.current[index].getBoundingClientRect().width;
+    gsap.set(imageWrapper.current[index], {
+      scale: 0.8,
+      rotation: -15,
+    });
 
-        gsap.set(imageWrapper.current[index], {
-          scale: 0.4,
-          rotation: -20,
-          yPercent: 0,
-          x: parentRight - wrapperWidth + 100,
-        });
-
-        gsap.to(imageWrapper.current[index], { opacity: 1, scale: 0.65, yPercent: -60, rotation: 2 });
-        gsap.to(tagsRef.current[index], { opacity: 1, duration: 0.3 });
-      }
-    }
+    gsap.to(imageWrapper.current[index], { opacity: 1, scale: 1, yPercent: 0, rotation: 2 });
+    gsap.to(tagsRef.current[index], { opacity: 1 });
   };
 
   const handleMouseLeave = (index) => {
-    if (window.innerWidth > 1200) {
-      gsap.to(imageWrapper.current[index], {
-        opacity: 0,
-        yPercent: -10,
-        scale: 0.4,
-        rotation: -15,
-      });
-      gsap.to(tagsRef.current[index], { opacity: 0, duration: 0.3 });
-    }
+    gsap.to(imageWrapper.current[index], {
+      opacity: 0,
+      yPercent: -50,
+      scale: 0.8,
+      rotation: -15,
+    });
+    gsap.to(tagsRef.current[index], { opacity: 0 });
   };
 
   return (
