@@ -11,7 +11,6 @@ const WorksComponent = () => {
   const projectId = parseInt(params.id);
   const { switchLang } = useContext(LangContext);
   const [project, setProject] = useState(null);
-
   const [link, setLink] = useState(null);
 
   useEffect(() => {
