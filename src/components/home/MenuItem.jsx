@@ -21,18 +21,20 @@ const MenuItem = ({ project, index }) => {
 
   const handleMouseEnter = (index) => {
     if (window.innerWidth > 1200) {
-      const parentRight = menuItems.current[index].getBoundingClientRect().right;
-      const wrapperWidth = imageWrapper.current[index].getBoundingClientRect().width;
+      if (menuItems.current[index] && imageWrapper.current[index]) {
+        const parentRight = menuItems.current[index].getBoundingClientRect().right;
+        const wrapperWidth = imageWrapper.current[index].getBoundingClientRect().width;
 
-      gsap.set(imageWrapper.current[index], {
-        scale: 0.4,
-        rotation: -20,
-        yPercent: 0,
-        x: parentRight - wrapperWidth + 100,
-      });
+        gsap.set(imageWrapper.current[index], {
+          scale: 0.4,
+          rotation: -20,
+          yPercent: 0,
+          x: parentRight - wrapperWidth + 100,
+        });
 
-      gsap.to(imageWrapper.current[index], { opacity: 1, scale: 0.65, yPercent: -60, rotation: 2 });
-      gsap.to(tagsRef.current[index], { opacity: 1, duration: 0.3 });
+        gsap.to(imageWrapper.current[index], { opacity: 1, scale: 0.65, yPercent: -60, rotation: 2 });
+        gsap.to(tagsRef.current[index], { opacity: 1, duration: 0.3 });
+      }
     }
   };
 
