@@ -49,7 +49,7 @@ const MenuItem = ({ project, index }) => {
   };
 
   return (
-    <div className="menu__item br">
+    <div className="menu__item">
       <div className="menu__item__image__wrapper" ref={(el) => (imageWrapper.current[index] = el)}>
         <img className="menu__item__image__inner" src={project.image} alt={project.title} />
       </div>
