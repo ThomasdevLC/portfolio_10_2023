@@ -28,7 +28,7 @@ const MenuItem = ({ project, index }) => {
         scale: 0.4,
         rotation: -20,
         yPercent: 0,
-        x: parentRight - wrapperWidth + 100,
+        x: parentRight - wrapperWidth + 140,
       });
 
       gsap.to(imageWrapper.current[index], { opacity: 1, scale: 0.65, yPercent: -40, x: parentRight - wrapperWidth + 140, rotation: 2 });
