@@ -31,7 +31,7 @@ const MenuItem = ({ project, index }) => {
   const handleMouseLeave = (index) => {
     gsap.to(imageWrapper.current[index], {
       opacity: 0,
-      yPercent: -50,
+      yPercent: 50,
       scale: 0.8,
       rotation: -15,
     });
