@@ -67,7 +67,7 @@
       line-height: 30px;
       transition: color 0.3s;
 
-      & span {
+      &__separator {
         @include mixin.md-lt {
           display: none;
         }

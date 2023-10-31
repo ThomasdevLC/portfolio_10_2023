@@ -22,7 +22,8 @@ const Header = () => {
         <div className="header__right">
           <NavLink to="/about">
             <p className="header__right__about blur">
-              <span className="header__right__about__text">{switchLang === "fr" ? "À propos" : "About"}</span> <span>|</span>
+              <span className="header__right__about__text">{switchLang === "fr" ? "À propos" : "About"}</span>{" "}
+              <span className="header__right__about__separator">|</span>
             </p>
           </NavLink>
           <div className="header__right__lang">
