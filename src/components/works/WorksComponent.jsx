@@ -1,6 +1,7 @@
 import { useEffect, useState, useContext } from "react";
 import { useParams } from "react-router-dom";
 import { LangContext } from "../../context/LangContext";
+
 import worklistFr from "../../worklist/worklistData";
 import worklistEn from "../../worklist/worklistDataEn";
 import BackArrow from "../../utils/BackArrow";
@@ -12,6 +13,11 @@ const WorksComponent = () => {
   const { switchLang } = useContext(LangContext);
   const [project, setProject] = useState(null);
   const [link, setLink] = useState(null);
+
+  useEffect(() => {
+    const selectedProject = (switchLang === "fr" ? worklistFr : worklistEn).find((w) => w.id === projectId);
+    setProject(selectedProject);
+  }, [projectId, switchLang]);
 
   useEffect(() => {
     if (project && project.title) {

@@ -111,6 +111,9 @@
       &--btn a {
         font-family: var(--font-text);
         color: var(--primary);
+        &:hover {
+          color: var(--text-color);
+        }
       }
     }
   }

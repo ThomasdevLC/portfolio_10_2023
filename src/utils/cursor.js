@@ -1,7 +1,7 @@
 export function initCursorEffects(location) {
   let mouseCursor = document.querySelector(".cursor");
   let menuTitles = document.querySelectorAll(".menu__item__name");
-  let blurElements = document.querySelectorAll(".blur, img");
+  let blurElements = document.querySelectorAll(".blur,.project__table__td__link, img");
 
   const cursor = (e) => {
     if (e.pageX >= window.innerWidth - 10 || e.pageY >= window.innerHeight - 10 || window.innerWidth < 1200) {
