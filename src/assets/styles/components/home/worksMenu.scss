@@ -38,7 +38,7 @@
       word-wrap: break-word;
 
       @include mixin.xxl-lt {
-        line-height: 50px;
+        line-height: 45px;
       }
 
       @include mixin.md-lt {
