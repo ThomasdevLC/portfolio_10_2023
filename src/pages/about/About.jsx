@@ -61,7 +61,7 @@ const About = () => {
           <p className="intro__right__stack__title">STACK</p>
           <ul className="intro__right__stack__list">
             <li>HTML5 / CSS3</li>
-            <li>JAVASCRIPT</li>
+            <li>JAVASCRIPT / TYPESCRIPT </li>
             <li>REACT</li>
             <li>VUE</li>
             <li>EXPRESS / NODE.JS</li>
