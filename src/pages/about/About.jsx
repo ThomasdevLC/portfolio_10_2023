@@ -63,7 +63,7 @@ const About = () => {
             <li>HTML5 / CSS3</li>
             <li>JAVASCRIPT / TYPESCRIPT </li>
             <li>REACT</li>
-            <li>VUE</li>
+            <li>VUE / NUXT 3</li>
             <li>EXPRESS / NODE.JS</li>
             <li>GIT</li>
           </ul>
