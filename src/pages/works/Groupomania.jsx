@@ -1,29 +1,17 @@
-import { useState, useRef } from "react";
 import WorksComponent from "../../components/works/WorksComponent";
-import video from "../../assets/videos/groupomania-video.mp4";
+import blogHome from "../../assets/images/blog_home.png";
+import blogArticles from "../../assets/images/blog_articles.png";
+import blogAdmin from "../../assets/images/blog_admin.png";
 import Transition from "../../utils/Transition";
 
 const Groupomania = () => {
-  const videoRef = useRef(null);
-  const [isPlaying, setIsPlaying] = useState(false);
-
-  const toggleVideo = () => {
-    if (isPlaying) {
-      videoRef.current.pause();
-    } else {
-      videoRef.current.play();
-    }
-    setIsPlaying(!isPlaying);
-  };
-
   return (
     <section className="groupomania-container">
       <WorksComponent />
-      <div className="container__video">
-        <button className="container__video__btn" onClick={toggleVideo}>
-          {isPlaying ? "ll Pause" : "► Play video"}
-        </button>
-        <video className="container__video__player" width="100%" src={video} type="video/mp4" loop ref={videoRef}></video>
+      <div className="farm__description">
+        <img className="farm__description__image-one" src={blogHome} alt="image projet ferme de la rougeraie page a propos" />
+        <img className="farm__description__image-two" src={blogArticles} alt="image projet ferme de la rougeraie page produits" />
+        <img className="farm__description__image-two" src={blogAdmin} alt="image projet ferme de la rougeraie page produits" />
       </div>
     </section>
   );

@@ -22,7 +22,7 @@ const WorksComponent = () => {
   useEffect(() => {
     if (project && project.title) {
       switch (project.title) {
-        case "FERME LA ROUGERAIE":
+        case "FERME DE LA ROUGERAIE":
           setLink(switchLang === "fr" ? "VISITER SITE ADMIN" : "VISIT ADMIN SITE");
           break;
         case "GCA":

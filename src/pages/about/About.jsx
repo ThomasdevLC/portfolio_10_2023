@@ -72,6 +72,7 @@ const About = () => {
           <p className="intro__right__libr__title">{switchLang === "fr" ? "LIBRAIRIES" : "LIBRARIES"}</p>
           <ul className="intro__right__libr__list">
             <li>SASS</li>
+            <li>TAILWIND</li>
             <li>GSAP</li>
             <li>FRAMER-MOTION</li>
           </ul>

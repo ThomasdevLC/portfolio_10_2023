@@ -2,25 +2,26 @@ import asphaltImage from "../assets/images/asphalt_link.png";
 import fermeImage from "../assets/images/ferme_link.png";
 import pwaImage from "../assets/images/pwa_link.png";
 import kasaImage from "../assets/images/kasa_link.png";
-import groupomaniaImage from "../assets/images/groupomania_link.png";
+// import groupomaniaImage from "../assets/images/groupomania_link.png";
+import blogImage from "../assets/images/blog_link.png";
 
 const worklist = [
   {
     id: 1,
-    title: "ASPHALT",
-    description: "Site E-commerce",
-    period: "Août 2023",
-    image: asphaltImage,
-    tags: ["React", "Sass", "Gsap", "Framer-Motion", "Figma"],
-    link: "bikeshop",
-    intro: " Site web pour une marque de vélo fictive",
+    title: "BLOG",
+    description: "Blog pour une association",
+    period: "Février 2024",
+    image: blogImage,
+    tags: ["Nuxt 3", "Strapi", "Tailwind", "Figma"],
+    link: "blog",
+    intro: "Blog pour une association, utilisant les technologies Nuxt.js et Strapi.",
     pitch:
-      "Dans ma démarche d'amélioration en tant que développeur frontend, j'ai récemment entrepris un projet personnel. L'objectif initial était d'explorer deux bibliothèques d'animation : GSAP et Framer Motion. Mon principal but était de créer des animations fluides et des effets visuels pour un site web fictif de marque de vélo.",
-    url: "https://bike-shop.thomaslecam.com/",
+      " Cette combinaison de Nuxt et Strapi a permis de créer un blog dynamique et facile à gérer pour l'association. J'ai utilisé Strapi comme système de gestion de contenu (CMS) pour permettre à l'administrateur  de gérer facilement les publications d'articles. Grâce à l'interface de Strapi, l'administrateur peut ajouter, modifier et supprimer des articles sans nécessiter de connaissances techniques approfondies.",
+    url: "https://blog.thomaslecam.com/",
   },
   {
     id: 2,
-    title: "FERME LA ROUGERAIE",
+    title: "FERME DE LA ROUGERAIE",
     description: "Site E-commerce",
     period: "Mai 2023",
     image: fermeImage,
@@ -34,6 +35,20 @@ const worklist = [
   },
   {
     id: 3,
+    title: "ASPHALT",
+    description: "Site E-commerce",
+    period: "Août 2023",
+    image: asphaltImage,
+    tags: ["React", "Sass", "Gsap", "Framer-Motion", "Figma"],
+    link: "bikeshop",
+    intro: " Site web pour une marque de vélo fictive",
+    pitch:
+      "Dans ma démarche d'amélioration en tant que développeur frontend, j'ai récemment entrepris un projet personnel. L'objectif initial était d'explorer deux bibliothèques d'animation : GSAP et Framer Motion. Mon principal but était de créer des animations fluides et des effets visuels pour un site web fictif de marque de vélo.",
+    url: "https://bike-shop.thomaslecam.com/",
+  },
+
+  {
+    id: 4,
     title: "GCA",
     description: "Stage Gca",
     period: "Mars 2023",
@@ -48,7 +63,7 @@ const worklist = [
     url2: "http://gstatpwa.thomaslecam.com/login/d_bauchu",
   },
   {
-    id: 4,
+    id: 5,
     title: "KASA",
     description: "Formation OpenClassrooms",
     period: "Décembre 2022",
@@ -59,19 +74,6 @@ const worklist = [
       "Dans le cadre d'un des projets Openclassrooms, il était demandé d'intégrer la maquette figma d'une plateforme de location de logements entre particuliers avec la technologie React.js et l'utilisation de react-router.",
     pitch: "J'ai implémenté la partie front-end à l'aide de React. Le site est responsive et les composants sont modulaires et réutilisables.",
     url: "https://kasa.thomaslecam.com/",
-  },
-  {
-    id: 5,
-    title: "GROUPOMANIA",
-    description: "Formation OpenClassrooms",
-    period: "Novembre 2022",
-    image: groupomaniaImage,
-    tags: ["React", "Sass", "NodeJs"],
-    link: "groupomania",
-    intro: " Réseau social interne pour les employés d'une entreprise réalisé durant ma formation Openclassrooms.",
-    pitch:
-      "Le projet fullstack  comprend une page de connexion permettant à l'utilisateur de se connecter, ou bien de créer un compte, une fonctionnalité de création de messages ainsi qu' une page listant les posts et commentaires.",
-    url: "https://github.com/ThomasdevLC/groupomania",
   },
 ];
 
