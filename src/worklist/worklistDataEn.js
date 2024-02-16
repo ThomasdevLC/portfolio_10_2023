@@ -1,20 +1,19 @@
 const worklistEn = [
   {
     id: 1,
-    title: "ASPHALT",
-    description: "E-commerce Website",
-    period: "August 2023",
-    tags: ["React", "Sass", "Gsap", "Framer-Motion", "Figma"],
-    link: "portfolio",
-    intro: "Website for a fictional bicycle brand",
+    title: "BLOG",
+    description: "Blog for an association",
+    period: "February 2024",
+    tags: ["Nuxt 3", "Strapi", "Tailwind", "Figma"],
+    link: "blog",
+    intro: "Blog for an association, using Nuxt.js and Strapi technologies.",
     pitch:
-      "I recently undertook a personal project to improve as a frontend developer. The aim was to explore two animation libraries: GSAP and Framer Motion. My main objective was to create fluid animations and visual effects for a fictional bicycle brand website.",
-    url: "http://bike-shop.thomaslecam.com/",
+      "This combination of Nuxt and Strapi created a dynamic and easy-to-manage blog for the association. I used Strapi as a content management system (CMS) to allow the administrator to easily manage the publication of articles. Through the Strapi interface, the administrator can add, edit, and delete articles without requiring in-depth technical knowledge..",
+    url: "https://blog.thomaslecam.com/",
   },
-
   {
     id: 2,
-    title: "FERME LA ROUGERAIE",
+    title: "FERME DE LA ROUGERAIE",
     description: "E-commerce Website",
     period: "May 2023",
     tags: ["Vue", "Pinia", "Sass", "NodeJs", "Figma"],
@@ -27,6 +26,19 @@ const worklistEn = [
   },
   {
     id: 3,
+    title: "ASPHALT",
+    description: "E-commerce Website",
+    period: "August 2023",
+    tags: ["React", "Sass", "Gsap", "Framer-Motion", "Figma"],
+    link: "portfolio",
+    intro: "Website for a fictional bicycle brand",
+    pitch:
+      "I recently undertook a personal project to improve as a frontend developer. The aim was to explore two animation libraries: GSAP and Framer Motion. My main objective was to create fluid animations and visual effects for a fictional bicycle brand website.",
+    url: "http://bike-shop.thomaslecam.com/",
+  },
+
+  {
+    id: 4,
     title: "GCA",
     description: "Gca Internship",
     period: "March 2023",
@@ -39,7 +51,7 @@ const worklistEn = [
     url2: "http://gstatpwa.thomaslecam.com/login/d_bauchu",
   },
   {
-    id: 4,
+    id: 5,
     title: "KASA",
     description: "OpenClassrooms Training",
     period: "December 2022",
@@ -49,18 +61,6 @@ const worklistEn = [
       "As part of an OpenClassrooms project, I was asked to integrate the Figma mockup of a platform for renting accommodations between individuals using React.js and react-router.",
     pitch: " I implemented the front-end part using React. The site is responsive, and the components are modular and reusable.",
     url: "http://kasa.thomaslecam.com/",
-  },
-  {
-    id: 5,
-    title: "GROUPOMANIA",
-    description: "OpenClassrooms Training",
-    period: "November 2022",
-    tags: ["React", "Sass", "NodeJs"],
-    link: "groupomania",
-    intro: "Internal social network for employees of a company, created during my OpenClassrooms training.",
-    pitch:
-      "The full-stack project includes a login page allowing the user to sign in or create an account, a feature to create messages, as well as a page listing posts and comments.",
-    url: "https://github.com/ThomasdevLC/groupomania",
   },
 ];
 

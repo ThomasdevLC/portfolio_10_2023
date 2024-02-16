@@ -2,7 +2,6 @@ import asphaltImage from "../assets/images/asphalt_link.png";
 import fermeImage from "../assets/images/ferme_link.png";
 import pwaImage from "../assets/images/pwa_link.png";
 import kasaImage from "../assets/images/kasa_link.png";
-// import groupomaniaImage from "../assets/images/groupomania_link.png";
 import blogImage from "../assets/images/blog_link.png";
 
 const worklist = [
