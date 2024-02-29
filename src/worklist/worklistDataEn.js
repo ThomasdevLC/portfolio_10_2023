@@ -9,7 +9,7 @@ const worklistEn = [
     intro: "Blog for an association, using Nuxt.js and Strapi technologies.",
     pitch:
       "This combination of Nuxt and Strapi created a dynamic and easy-to-manage blog for the association. I used Strapi as a content management system (CMS) to allow the administrator to easily manage the publication of articles. Through the Strapi interface, the administrator can add, edit, and delete articles without requiring in-depth technical knowledge..",
-    url: "https://blog.thomaslecam.com/",
+    url: "https://amities-talea.fr/",
   },
   {
     id: 2,
