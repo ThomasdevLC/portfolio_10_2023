@@ -21,19 +21,18 @@ const MenuItem = ({ project, index }) => {
   const handleMouseEnter = (index) => {
     gsap.set(imageWrapper.current[index], {
       scale: 0.8,
-      rotation: -15,
+      rotation: -5,
     });
 
-    gsap.to(imageWrapper.current[index], { opacity: 1, scale: 1, yPercent: 0, rotation: 2 });
+    gsap.to(imageWrapper.current[index], { opacity: 1, scale: 1, yPercent: 0, rotation: 3 });
     gsap.to(tagsRef.current[index], { opacity: 1 });
   };
 
   const handleMouseLeave = (index) => {
     gsap.to(imageWrapper.current[index], {
       opacity: 0,
-      yPercent: 50,
+      rotation: -3,
       scale: 0.8,
-      rotation: -15,
     });
     gsap.to(tagsRef.current[index], { opacity: 0 });
   };
