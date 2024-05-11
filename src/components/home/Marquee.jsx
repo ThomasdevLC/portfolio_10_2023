@@ -7,9 +7,9 @@ const Marquee = () => {
 
   useEffect(() => {
     if (switchLang === "fr") {
-      setDevText("développeur frontend");
+      setDevText("développeur web");
     } else {
-      setDevText(" frontend developer");
+      setDevText(" web developer");
     }
   }, [switchLang]);
   return (

@@ -1,18 +1,6 @@
 const worklistEn = [
   {
     id: 1,
-    title: "BLOG",
-    description: "Blog for an association",
-    period: "February 2024",
-    tags: ["Nuxt 3", "Strapi", "Tailwind", "Figma"],
-    link: "blog",
-    intro: "Blog for an association, using Nuxt.js and Strapi technologies.",
-    pitch:
-      "This combination of Nuxt and Strapi created a dynamic and easy-to-manage blog for the association. I used Strapi as a content management system (CMS) to allow the administrator to easily manage the publication of articles. Through the Strapi interface, the administrator can add, edit, and delete articles without requiring in-depth technical knowledge..",
-    url: "https://amities-talea.fr/",
-  },
-  {
-    id: 2,
     title: "FERME DE LA ROUGERAIE",
     description: "E-commerce Website",
     period: "May 2023",
@@ -25,20 +13,7 @@ const worklistEn = [
     url2: "http://fermerougeraie.thomaslecam.com/admin",
   },
   {
-    id: 3,
-    title: "ASPHALT",
-    description: "E-commerce Website",
-    period: "August 2023",
-    tags: ["React", "Sass", "Gsap", "Framer-Motion", "Figma"],
-    link: "portfolio",
-    intro: "Website for a fictional bicycle brand",
-    pitch:
-      "I recently undertook a personal project to improve as a frontend developer. The aim was to explore two animation libraries: GSAP and Framer Motion. My main objective was to create fluid animations and visual effects for a fictional bicycle brand website.",
-    url: "http://bike-shop.thomaslecam.com/",
-  },
-
-  {
-    id: 4,
+    id: 2,
     title: "GCA",
     description: "Gca Internship",
     period: "March 2023",
@@ -46,9 +21,33 @@ const worklistEn = [
     link: "gca",
     intro: "During my internship at the company GCA, I developed a mobile-first application designed specifically to meet the needs of the sales teams.",
     pitch:
-      "This project, developed using Vue 3 and configured with Vite, was created with the aim of keeping salespeople informed of their sales figures and objectives in real-time. By adopting a Progressive Web App (PWA) approach, the application can be installed directly on users' home screens, providing an experience similar to that of a native app.",
+      "This project, developed using Vue 3 and configured with Vite, was created with the aim of keeping salespeople informed of their sales figures and objectives in real-time. By adopting a Progressive Web App (PWA) approach, the application can be installed directly on users' home screens, providing an experience similar to a native app.",
     url: "http://gstatpwa.thomaslecam.com/login/b_duveau",
     url2: "http://gstatpwa.thomaslecam.com/login/d_bauchu",
+  },
+  {
+    id: 3,
+    title: "BLOG",
+    description: "Blog for an association",
+    period: "February 2024",
+    tags: ["Nuxt 3", "Strapi", "Tailwind", "Figma"],
+    link: "blog",
+    intro: "Blog for an association, using Nuxt.js and Strapi technologies.",
+    pitch:
+      "This combination of Nuxt and Strapi created a dynamic and easy-to-manage blog for the association. I used Strapi as a content management system (CMS) to allow the administrator to easily manage the publication of articles. Through the Strapi interface, the administrator can add, edit, and delete articles without requiring in-depth technical knowledge.",
+    url: "https://amities-talea.fr/",
+  },
+  {
+    id: 4,
+    title: "ASPHALT",
+    description: "E-commerce Website",
+    period: "August 2023",
+    tags: ["React", "Sass", "Gsap", "Framer-Motion", "Figma"],
+    link: "portfolio",
+    intro: "Website for a fictional bicycle brand",
+    pitch:
+      "I recently undertook a personal project to improve as a frontend developer. The aim was to explore two animation libraries: GSAP and Framer Motion. My objective was to create fluid animations and visual effects for a fictional bicycle brand website.",
+    url: "http://bike-shop.thomaslecam.com/",
   },
   {
     id: 5,

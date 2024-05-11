@@ -7,19 +7,6 @@ import blogImage from "../assets/images/blog_link.png";
 const worklist = [
   {
     id: 1,
-    title: "BLOG",
-    description: "Blog pour une association",
-    period: "Février 2024",
-    image: blogImage,
-    tags: ["Nuxt 3", "Strapi", "Tailwind", "Figma"],
-    link: "blog",
-    intro: "Blog pour une association, utilisant les technologies Nuxt.js et Strapi.",
-    pitch:
-      " Cette combinaison de Nuxt et Strapi a permis de créer un blog dynamique et facile à gérer pour l'association. J'ai utilisé Strapi comme système de gestion de contenu (CMS) pour permettre à l'administrateur  de gérer facilement les publications d'articles. Grâce à l'interface de Strapi, l'administrateur peut ajouter, modifier et supprimer des articles sans nécessiter de connaissances techniques approfondies.",
-    url: "https://amities-talea.fr/",
-  },
-  {
-    id: 2,
     title: "FERME DE LA ROUGERAIE",
     description: "Site E-commerce",
     period: "Mai 2023",
@@ -33,21 +20,7 @@ const worklist = [
     url2: "http://fermerougeraie.thomaslecam.com/admin",
   },
   {
-    id: 3,
-    title: "ASPHALT",
-    description: "Site E-commerce",
-    period: "Août 2023",
-    image: asphaltImage,
-    tags: ["React", "Sass", "Gsap", "Framer-Motion", "Figma"],
-    link: "bikeshop",
-    intro: " Site web pour une marque de vélo fictive",
-    pitch:
-      "Dans ma démarche d'amélioration en tant que développeur frontend, j'ai récemment entrepris un projet personnel. L'objectif initial était d'explorer deux bibliothèques d'animation : GSAP et Framer Motion. Mon principal but était de créer des animations fluides et des effets visuels pour un site web fictif de marque de vélo.",
-    url: "https://bike-shop.thomaslecam.com/",
-  },
-
-  {
-    id: 4,
+    id: 2,
     title: "GCA",
     description: "Stage Gca",
     period: "Mars 2023",
@@ -60,6 +33,32 @@ const worklist = [
       "Ce projet, développé avec Vue 3 et configuré avec Vite, a été créé dans le but de tenir les commerciaux informés de leurs chiffres de vente et de leurs objectifs en temps réel. En adoptant une approche PWA (Progressive Web App), l'application peut  être installée directement sur l'écran d'accueil des utilisateurs, offrant ainsi une expérience similaire à celle d'une application native.",
     url: "http://gstatpwa.thomaslecam.com/login/b_duveau",
     url2: "http://gstatpwa.thomaslecam.com/login/d_bauchu",
+  },
+  {
+    id: 3,
+    title: "BLOG",
+    description: "Blog pour une association",
+    period: "Février 2024",
+    image: blogImage,
+    tags: ["Nuxt 3", "Strapi", "Tailwind", "Figma"],
+    link: "blog",
+    intro: "Blog pour une association, utilisant les technologies Nuxt.js et Strapi.",
+    pitch:
+      " Cette combinaison de Nuxt et Strapi a permis de créer un blog dynamique et facile à gérer pour l'association. J'ai utilisé Strapi comme système de gestion de contenu (CMS) pour permettre à l'administrateur  de gérer facilement les publications d'articles. Grâce à l'interface de Strapi, l'administrateur peut ajouter, modifier et supprimer des articles sans nécessiter de connaissances techniques approfondies.",
+    url: "https://amities-talea.fr/",
+  },
+  {
+    id: 4,
+    title: "ASPHALT",
+    description: "Site E-commerce",
+    period: "Août 2023",
+    image: asphaltImage,
+    tags: ["React", "Sass", "Gsap", "Framer-Motion", "Figma"],
+    link: "bikeshop",
+    intro: " Site web pour une marque de vélo fictive",
+    pitch:
+      "Dans ma démarche d'amélioration en tant que développeur frontend, j'ai récemment entrepris un projet personnel. L'objectif initial était d'explorer deux bibliothèques d'animation : GSAP et Framer Motion. Mon principal but était de créer des animations fluides et des effets visuels pour un site web fictif de marque de vélo.",
+    url: "https://bike-shop.thomaslecam.com/",
   },
   {
     id: 5,
