@@ -62,8 +62,9 @@ const About = () => {
           <ul className="intro__right__stack__list">
             <li>HTML5 / CSS3</li>
             <li>JAVASCRIPT / TYPESCRIPT </li>
-            <li>REACT</li>
-            <li>VUE / NUXT 3</li>
+            <li>REACT / ANGULAR </li>
+            <li>VUE / NUXT </li>
+            <li>JAVA / SPRINGBOOT</li>
             <li>EXPRESS / NODE.JS</li>
             <li>GIT</li>
           </ul>
@@ -71,10 +72,8 @@ const About = () => {
         <div className="intro__right__libr">
           <p className="intro__right__libr__title">{switchLang === "fr" ? "LIBRAIRIES" : "LIBRARIES"}</p>
           <ul className="intro__right__libr__list">
-            <li>SASS</li>
-            <li>TAILWIND</li>
-            <li>GSAP</li>
-            <li>FRAMER-MOTION</li>
+            <li>SASS / TAILWIND</li>
+            <li>GSAP / FRAMER-MOTION </li>
           </ul>
         </div>
       </div>
