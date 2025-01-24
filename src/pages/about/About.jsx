@@ -66,7 +66,7 @@ const About = () => {
             <li>VUE / NUXT </li>
             <li>JAVA / SPRINGBOOT</li>
             <li>EXPRESS / NODE.JS</li>
-            <li>GIT</li>
+            <li>GIT / CI-CD / DOCKER</li>
           </ul>
         </div>
         <div className="intro__right__libr">
