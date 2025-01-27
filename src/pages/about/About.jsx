@@ -40,10 +40,10 @@ const About = () => {
               <img src={linkedin} alt="lien linkedin" />
             </a>
             <a href="https://github.com/ThomasdevLC" target="_blank" rel="noreferrer" className="intro__left__bottom__socials--link">
-              <img src={git} alt="lien linkedin" />
+              <img src={git} alt="lien git" />
             </a>
             <a href="mailto:thomas.lecam@gmail.com" target="_blank" rel="noreferrer" className="intro__left__bottom__socials--link">
-              <img src={gmail} alt="lien linkedin" />
+              <img src={gmail} alt="lien gmail" />
             </a>
           </div>
 
