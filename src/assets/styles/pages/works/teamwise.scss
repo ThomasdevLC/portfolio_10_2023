@@ -1,0 +1,25 @@
+@use "../../mixins" as mixin;
+
+.teamwise__container {
+  background-color: var(--background);
+}
+
+.teamwise__description {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  row-gap: 40px;
+  padding: 40px;
+
+  &__image-one,
+  &__image-two,
+  &__image-three,
+  &__image-four,
+  &__image-five
+  {
+    border: 2px solid var(--gray-2);
+  }
+}

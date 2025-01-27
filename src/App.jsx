@@ -11,6 +11,7 @@ import Groupomania from "./pages/works/Groupomania";
 import Kasa from "./pages/works/Kasa";
 import Gca from "./pages/works/Gca";
 import About from "./pages/about/About";
+import Teamwise from "./pages/works/Teamwise.jsx";
 
 function App() {
   const location = useLocation();
@@ -44,6 +45,7 @@ function App() {
           <Routes key={switchLang}>
             <Route path="/" element={<Home />}></Route>
             <Route path="/about" element={<About />}></Route>
+            <Route path="/teamwise/:id" element={<Teamwise />}></Route>
             <Route path="/bikeshop/:id" element={<BikeShop />}></Route>
             <Route path="/ferme-rougeraie/:id" element={<FermeRougeraie />}></Route>
             <Route path="/blog/:id" element={<Groupomania />}></Route>
