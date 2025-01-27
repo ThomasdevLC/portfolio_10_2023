@@ -109,10 +109,11 @@
       gap: 15px;
 
       &--btn a {
-        font-family: var(--font-text);
-        color: var(--primary);
+
+        color: var(--text-color);
         &:hover {
-          color: var(--text-color);
+          color: var(--primary);
+
         }
       }
     }
