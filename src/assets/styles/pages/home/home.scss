@@ -1,0 +1,16 @@
+.home {
+  height: 100vh; /* La page prend toute la hauteur de l'écran */
+  overflow: hidden; /* Désactive le défilement global */
+}
+
+.menu {
+  height: 100%; /* La section menu prend tout l'espace disponible */
+  overflow-y: scroll; /* Permet le défilement vertical uniquement pour menu */
+  scrollbar-width: none; /* Masque la barre de défilement dans Firefox */
+  -ms-overflow-style: none; /* Masque la barre de défilement dans IE/Edge */
+  padding-bottom: 80px;
+}
+
+.menu::-webkit-scrollbar {
+  display: none; /* Masque la barre de défilement dans les navigateurs basés sur WebKit */
+}
