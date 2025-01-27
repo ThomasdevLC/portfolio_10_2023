@@ -30,7 +30,6 @@ const About = () => {
           <p> {switchLang === "fr" ? homeFr.intro : homeEn.intro}</p>
         </div>
 
-        <p className="intro__left__city">Montpellier</p>
         <p className="intro__left__contact">
           06 43 84 36 32 <br />
           thomas.lecam@gmail.com
@@ -60,11 +59,11 @@ const About = () => {
         <div className="intro__right__stack">
           <p className="intro__right__stack__title">STACK</p>
           <ul className="intro__right__stack__list">
-            <li>HTML5 / CSS3</li>
-            <li>JAVASCRIPT / TYPESCRIPT </li>
-            <li>REACT / ANGULAR </li>
-            <li>VUE / NUXT </li>
+            <li>JAVASCRIPT / TYPESCRIPT</li>
+            <li>REACT / ANGULAR</li>
+            <li>VUE / NUXT</li>
             <li>JAVA / SPRINGBOOT</li>
+            <li>PHP / SYMFONY</li>
             <li>EXPRESS / NODE.JS</li>
             <li>GIT</li>
           </ul>

@@ -16,12 +16,12 @@ const Marquee = () => {
     <div>
       <div className="marquee blur">
         <div className="marquee__wrapper">
-          &nbsp;{devText} <span className="marquee-dot"></span> portfolio 2024<span className="marquee-dot"></span>
-          {devText} <span className="marquee-dot"></span> portfolio 2024<span className="marquee-dot"></span>
-          {devText} <span className="marquee-dot"></span> portfolio 2024
+          &nbsp;{devText} <span className="marquee-dot"></span> portfolio 2025<span className="marquee-dot"></span>
+          {devText} <span className="marquee-dot"></span> portfolio 2025<span className="marquee-dot"></span>
+          {devText} <span className="marquee-dot"></span> portfolio 2025
           <span className="marquee-dot"></span>
-          {devText} <span className="marquee-dot"></span> portfolio 2024<span className="marquee-dot"></span>
-          {devText} <span className="marquee-dot"></span> portfolio 2024<span className="marquee-dot"></span>
+          {devText} <span className="marquee-dot"></span> portfolio 2025<span className="marquee-dot"></span>
+          {devText} <span className="marquee-dot"></span> portfolio 2025<span className="marquee-dot"></span>
         </div>
       </div>
     </div>
