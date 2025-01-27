@@ -1,6 +1,7 @@
 import { useEffect, useState, useContext } from "react";
 import { useParams } from "react-router-dom";
 import { LangContext } from "../../context/LangContext";
+import git from "../../assets/images/git.png";
 
 import worklistFr from "../../worklist/worklistData";
 import worklistEn from "../../worklist/worklistDataEn";
@@ -12,7 +13,8 @@ const WorksComponent = () => {
   const projectId = parseInt(params.id);
   const { switchLang } = useContext(LangContext);
   const [project, setProject] = useState(null);
-  const [link, setLink] = useState(null);
+  const [linkOne, setLinkOne] = useState(null);
+  const [linkTwo, setLinkTwo] = useState(null);
 
   useEffect(() => {
     const selectedProject = (switchLang === "fr" ? worklistFr : worklistEn).find((w) => w.id === projectId);
@@ -22,11 +24,45 @@ const WorksComponent = () => {
   useEffect(() => {
     if (project && project.title) {
       switch (project.title) {
+        case "TEAMWISE":
+          setLinkOne(
+              <>
+                {switchLang === "fr" ? "REPO BACKEND" : "BACKEND REPO"}
+                <img src={git} alt="GitHub logo" style={{width: "20px", marginLeft: "8px"}}/>
+              </>
+          );
+          setLinkTwo(
+              <>
+                {switchLang === "fr" ? "REPO FRONTEND" : "FRONTEND REPO"}
+                <img src={git} alt="GitHub logo" style={{ width: "20px", marginLeft: "8px" }} />
+              </>
+          );
+          break;
         case "FERME DE LA ROUGERAIE":
-          setLink(switchLang === "fr" ? "VISITER SITE ADMIN" : "VISIT ADMIN SITE");
+          setLinkOne(switchLang === "fr" ? "VISITER SITE 🔗" : "VISIT SITE 🔗 ");
+          setLinkTwo(switchLang === "fr" ? "VISITER SITE ADMIN 🔗" : "VISIT ADMIN SITE 🔗");
           break;
         case "GCA":
-          setLink(switchLang === "fr" ? "VISITER SITE 2" : "VISIT SITE 2");
+          setLinkOne(
+          <>
+            {switchLang === "fr" ? "REPO GITHUB" : "GITHUB REPO "}
+            <img src={git} alt="GitHub logo" style={{width: "20px", marginLeft: "8px"}}/>
+          </>
+          );
+          break;
+        case "BLOG":
+          setLinkOne(
+              <>
+                {switchLang === "fr" ? "REPO GITHUB" : "GITHUB REPO "}
+                <img src={git} alt="GitHub logo" style={{width: "20px", marginLeft: "8px"}}/>
+              </>
+          );
+          break;
+        case "ASPHALT":
+          setLinkOne(switchLang === "fr" ? "VISITER SITE 🔗" : "VISIT SITE 🔗 ");
+          break;
+        case "KASA":
+          setLinkOne(switchLang === "fr" ? "VISITER SITE 🔗" : "VISIT SITE 🔗 ");
           break;
         default:
       }
@@ -73,12 +109,12 @@ const WorksComponent = () => {
                       <td className="project__table__td__link">
                         <div className="project__table__td__link--btn">
                           <a href={project.url} target="_blank" rel="noreferrer">
-                            {switchLang === "fr" ? <span>VISITER SITE</span> : <span>VISIT SITE</span>}
+                            <span>{linkOne}</span>
                           </a>
                         </div>
                         <div className="project__table__td__link--btn">
                           <a href={project.url2} target="_blank" rel="noreferrer">
-                            <span>{link}</span>
+                            <span>{linkTwo}</span>
                           </a>
                         </div>
                       </td>
