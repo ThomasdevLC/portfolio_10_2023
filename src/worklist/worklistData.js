@@ -3,6 +3,7 @@ import fermeImage from "../assets/images/ferme_link.png";
 import pwaImage from "../assets/images/pwa_link.png";
 import kasaImage from "../assets/images/kasa_link.png";
 import blogImage from "../assets/images/blog_link.png";
+import teamwise from "../assets/images/teamwise/teamwise.jpg";
 
 const worklist = [
   {
@@ -10,7 +11,7 @@ const worklist = [
     title: "TEAMWISE",
     description: "Application de covoiturage",
     period: "Septembre 2024",
-    image: fermeImage,
+    image: teamwise,
     tags: ["Angular", "PrimeNG", "Tailwind", "Java", "Spring Boot", "MySQL"],
     link: "teamwise",
     intro: " Application de covoiturage pour entreprise.",
