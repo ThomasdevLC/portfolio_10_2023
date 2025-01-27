@@ -7,23 +7,23 @@ import teamwise from "../assets/images/teamwise/teamwise.jpg";
 
 const worklist = [
   {
-    id: 0,
+    id: 1,
     title: "TEAMWISE",
     description: "Application de covoiturage",
     period: "Septembre 2024",
     image: teamwise,
     tags: ["Angular", "PrimeNG", "Tailwind", "Java", "Spring Boot", "MySQL"],
     link: "teamwise",
-    intro: " Application de covoiturage pour entreprise.",
+    intro: "Application de covoiturage pour entreprise.",
     pitch:
         "TeamWise a été développé pour promouvoir le covoiturage entre collègues et optimiser l’utilisation des véhicules de service en entreprise.\n" +
         " L’objectif est de réduire l’empreinte carbone des déplacements professionnels tout en facilitant la gestion des trajets et véhicules.\n",
-    url: "http://fermerougeraie.thomaslecam.com/",
-    url2: "http://fermerougeraie.thomaslecam.com/admin",
+    url: "https://github.com/ThomasdevLC/app-covoiturage-back",
+    url2: "https://github.com/ThomasdevLC/app-covoiturage-front",
   },
 
   {
-    id: 1,
+    id: 2,
     title: "FERME DE LA ROUGERAIE",
     description: "Site E-commerce",
     period: "Mai 2023",
@@ -37,7 +37,7 @@ const worklist = [
     url2: "http://fermerougeraie.thomaslecam.com/admin",
   },
   {
-    id: 2,
+    id: 3,
     title: "GCA",
     description: "Stage Gca",
     period: "Mars 2023",
@@ -48,11 +48,10 @@ const worklist = [
       "Lors de mon stage dans l'entreprise GCA, j'ai développé une application mobile first conçue spécifiquement pour répondre aux besoins des équipes commerciales.",
     pitch:
       "Ce projet, développé avec Vue 3 et configuré avec Vite, a été créé dans le but de tenir les commerciaux informés de leurs chiffres de vente et de leurs objectifs en temps réel. En adoptant une approche PWA (Progressive Web App), l'application peut  être installée directement sur l'écran d'accueil des utilisateurs, offrant ainsi une expérience similaire à celle d'une application native.",
-    url: "http://gstatpwa.thomaslecam.com/login/b_duveau",
-    url2: "http://gstatpwa.thomaslecam.com/login/d_bauchu",
+    url: "https://github.com/ThomasdevLC/pwa",
   },
   {
-    id: 3,
+    id: 4,
     title: "BLOG",
     description: "Blog pour une association",
     period: "Février 2024",
@@ -62,10 +61,10 @@ const worklist = [
     intro: "Blog pour une association, utilisant les technologies Nuxt.js et Strapi.",
     pitch:
       " Cette combinaison de Nuxt et Strapi a permis de créer un blog dynamique et facile à gérer pour l'association. J'ai utilisé Strapi comme système de gestion de contenu (CMS) pour permettre à l'administrateur  de gérer facilement les publications d'articles. Grâce à l'interface de Strapi, l'administrateur peut ajouter, modifier et supprimer des articles sans nécessiter de connaissances techniques approfondies.",
-    url: "https://amities-talea.fr/",
+    url: "https://github.com/ThomasdevLC/blog-front-nuxt",
   },
   {
-    id: 4,
+    id: 5,
     title: "ASPHALT",
     description: "Site E-commerce",
     period: "Août 2023",
@@ -74,11 +73,11 @@ const worklist = [
     link: "bikeshop",
     intro: " Site web pour une marque de vélo fictive",
     pitch:
-      "Dans ma démarche d'amélioration en tant que développeur frontend, j'ai récemment entrepris un projet personnel. L'objectif initial était d'explorer deux bibliothèques d'animation : GSAP et Framer Motion. Mon principal but était de créer des animations fluides et des effets visuels pour un site web fictif de marque de vélo.",
+      "L'objectif de ce projet était d'explorer deux bibliothèques d'animation : GSAP et Framer Motion. Mon principal but était de créer des animations fluides et des effets visuels pour un site web fictif de marque de vélo.",
     url: "https://bike-shop.thomaslecam.com/",
   },
   {
-    id: 5,
+    id: 6,
     title: "KASA",
     description: "Formation OpenClassrooms",
     period: "Décembre 2022",

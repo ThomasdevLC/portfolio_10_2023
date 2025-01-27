@@ -1,6 +1,24 @@
+import teamwise from "../assets/images/teamwise/teamwise.jpg";
+
 const worklistEn = [
   {
     id: 1,
+    title: "TEAMWISE",
+    description: "Carpooling application for companies.",
+    period: "September 2024",
+    image: teamwise,
+    tags: ["Angular", "PrimeNG", "Tailwind", "Java", "Spring Boot", "MySQL"],
+    link: "teamwise",
+    intro: "Carpooling application for companies.",
+    pitch:
+        "TeamWise was developed to promote carpooling among colleagues and optimize the use of company service vehicles.\n" +
+        "The goal is to reduce the carbon footprint of business trips while facilitating the management of trips and vehicles.\n",
+    url: "https://github.com/ThomasdevLC/app-covoiturage-back",
+    url2: "https://github.com/ThomasdevLC/app-covoiturage-front",
+  },
+
+  {
+    id: 2,
     title: "FERME DE LA ROUGERAIE",
     description: "E-commerce Website",
     period: "May 2023",
@@ -13,7 +31,7 @@ const worklistEn = [
     url2: "http://fermerougeraie.thomaslecam.com/admin",
   },
   {
-    id: 2,
+    id: 3,
     title: "GCA",
     description: "Gca Internship",
     period: "March 2023",
@@ -26,7 +44,7 @@ const worklistEn = [
     url2: "http://gstatpwa.thomaslecam.com/login/d_bauchu",
   },
   {
-    id: 3,
+    id: 4,
     title: "BLOG",
     description: "Blog for an association",
     period: "February 2024",
@@ -38,7 +56,7 @@ const worklistEn = [
     url: "https://amities-talea.fr/",
   },
   {
-    id: 4,
+    id: 5,
     title: "ASPHALT",
     description: "E-commerce Website",
     period: "August 2023",
@@ -50,7 +68,7 @@ const worklistEn = [
     url: "http://bike-shop.thomaslecam.com/",
   },
   {
-    id: 5,
+    id: 6,
     title: "KASA",
     description: "OpenClassrooms Training",
     period: "December 2022",
