@@ -6,6 +6,22 @@ import blogImage from "../assets/images/blog_link.png";
 
 const worklist = [
   {
+    id: 0,
+    title: "TEAMWISE",
+    description: "Application de covoiturage",
+    period: "Septembre 2024",
+    image: fermeImage,
+    tags: ["Angular", "PrimeNG", "Tailwind", "Java", "Spring Boot", "MySQL"],
+    link: "teamwise",
+    intro: " Application de covoiturage pour entreprise.",
+    pitch:
+        "TeamWise a été développé pour promouvoir le covoiturage entre collègues et optimiser l’utilisation des véhicules de service en entreprise.\n" +
+        " L’objectif est de réduire l’empreinte carbone des déplacements professionnels tout en facilitant la gestion des trajets et véhicules.\n",
+    url: "http://fermerougeraie.thomaslecam.com/",
+    url2: "http://fermerougeraie.thomaslecam.com/admin",
+  },
+
+  {
     id: 1,
     title: "FERME DE LA ROUGERAIE",
     description: "Site E-commerce",
