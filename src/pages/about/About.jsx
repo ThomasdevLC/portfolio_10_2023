@@ -69,9 +69,9 @@ const About = () => {
           </ul>
         </div>
         <div className="intro__right__libr">
-          <p className="intro__right__libr__title">{switchLang === "fr" ? "LIBRAIRIES" : "LIBRARIES"}</p>
+          <p className="intro__right__libr__title">{switchLang === "fr" ? "LIBRAIRIES DE STYLE" : "STYLING LIBRARIES"}</p>
           <ul className="intro__right__libr__list">
-            <li>SASS / TAILWIND</li>
+          <li>SASS / TAILWIND</li>
             <li>GSAP / FRAMER-MOTION </li>
           </ul>
         </div>
