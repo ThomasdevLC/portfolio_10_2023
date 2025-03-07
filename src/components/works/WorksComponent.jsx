@@ -3,6 +3,8 @@ import { useParams } from "react-router-dom";
 import { LangContext } from "../../context/LangContext";
 import git from "../../assets/images/git.png";
 
+import asphaltVideo from "../../assets/videos/video-site.mp4";
+
 import worklistFr from "../../worklist/worklistData";
 import worklistEn from "../../worklist/worklistDataEn";
 import BackArrow from "../../utils/BackArrow";
@@ -59,7 +61,7 @@ const WorksComponent = () => {
           );
           break;
         case "ASPHALT":
-          setLinkOne(switchLang === "fr" ? "VISITER SITE 🔗" : "VISIT SITE 🔗 ");
+          setLinkOne(switchLang === "fr" ? "VOIR DÉMO 🎥" : "WATCH DEMO 🎥");
           break;
         case "KASA":
           setLinkOne(switchLang === "fr" ? "VISITER SITE 🔗" : "VISIT SITE 🔗 ");
@@ -97,28 +99,34 @@ const WorksComponent = () => {
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
-                      <td className="project__table__td">{project.period}</td>
-                      <td className="project__table__td">
-                        <ul>
-                          {project.tags.map((tag, index) => (
+                  <tr>
+                    <td className="project__table__td">{project.period}</td>
+                    <td className="project__table__td">
+                      <ul>
+                        {project.tags.map((tag, index) => (
                             <li key={index}>{tag}</li>
-                          ))}
-                        </ul>
-                      </td>
-                      <td className="project__table__td__link">
-                        <div className="project__table__td__link--btn">
-                          <a href={project.url} target="_blank" rel="noreferrer">
-                            <span>{linkOne}</span>
-                          </a>
-                        </div>
-                        <div className="project__table__td__link--btn">
-                          <a href={project.url2} target="_blank" rel="noreferrer">
-                            <span>{linkTwo}</span>
-                          </a>
-                        </div>
-                      </td>
-                    </tr>
+                        ))}
+                      </ul>
+                    </td>
+                    <td className="project__table__td__link">
+                      <div className="project__table__td__link--btn">
+                        {project.title === "ASPHALT" ? (
+                            <a href={asphaltVideo} target="_blank" rel="noreferrer">
+                              <span>{linkOne}</span>
+                            </a>
+                        ) : (
+                            <a href={project.url} target="_blank" rel="noreferrer">
+                              <span>{linkOne}</span>
+                            </a>
+                        )}
+                      </div>
+                      <div className="project__table__td__link--btn">
+                        <a href={project.url2} target="_blank" rel="noreferrer">
+                          <span>{linkTwo}</span>
+                        </a>
+                      </div>
+                    </td>
+                  </tr>
                   </tbody>
                 </table>
               </div>
@@ -126,7 +134,7 @@ const WorksComponent = () => {
           </>
         )}
       </section>
-      <BackArrow />
+      <BackArrow/>
     </>
   );
 };

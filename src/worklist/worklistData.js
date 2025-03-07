@@ -32,7 +32,7 @@ const worklist = [
     link: "ferme-rougeraie",
     intro: " Site e-commerce pour une productrice de produits bio .",
     pitch:
-      "Le site a été développé à l'aide de Vue 3 pour la partie frontend, NodeJS pour la partie Backend et MongoDb pour la bade de données de produits. J'ai implémenté un panier pour que les utilisateurs puissent ajouter des produits et passer leur commande. En tant qu'administrateur, Léa, la productrice, peut se connecter au site et accéder à un résumé complet de toutes les commandes. La page d'administration lui permet également de créer les cartes produits et de gérer leur affichage sur le site.",
+      "Le site a été développé à l'aide de Vue 3 pour la partie frontend, NodeJS pour la partie Backend et MongoDb pour la base de données de produits. J'ai implémenté un panier pour que les utilisateurs puissent ajouter des produits et passer leur commande. En tant qu'administrateur, Léa, la productrice, peut se connecter au site et accéder à un résumé complet de toutes les commandes. La page d'administration lui permet également de créer les cartes produits et de gérer leur affichage sur le site.",
     url: "http://fermerougeraie.thomaslecam.com/",
     url2: "http://fermerougeraie.thomaslecam.com/admin",
   },
