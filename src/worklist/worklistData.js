@@ -16,12 +16,9 @@ const worklist = [
     intro: "Site e-commerce pour une productrice de produits bio.",
     pitch: `Ce site de vente en ligne a été développé pour Léa, une productrice de produits bios.
             Les utilisateurs peuvent parcourir les produits, les ajouter à leur panier et passer commande.
-
             Le frontend est construit avec Vue 3, tandis que le backend repose sur PHP / Symfony et utilise EasyAdmin pour la gestion du back-office.
             Le site s’appuie sur une base de données MySQL pour stocker les produits, les commandes et les utilisateurs.
-
-            Depuis son espace d’administration sécurisé, Léa peut consulter un tableau de bord regroupant l’ensemble des commandes passées,
-            créer, modifier ou supprimer des fiches produits, et gérer l’affichage des articles proposés à la vente.`,
+            Depuis son espace d’administration sécurisé, Léa peut consulter un tableau de bord regroupant l’ensemble des commandes passées, créer, modifier ou supprimer des fiches produits, et gérer l’affichage des articles proposés à la vente.`,
 
     url: "https://github.com/ThomasdevLC/ferme_de_la_rougeraie_v2-symfony-backend",
     url2: "https://github.com/ThomasdevLC/ferme_de_la_rougeraie_v2-vue-frontend",
