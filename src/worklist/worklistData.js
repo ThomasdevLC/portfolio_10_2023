@@ -1,4 +1,3 @@
-import asphaltImage from "../assets/images/asphalt_link.png";
 import fermeImage from "../assets/images/ferme_link.png";
 import pwaImage from "../assets/images/pwa_link.png";
 import kasaImage from "../assets/images/kasa_link.png";
@@ -8,9 +7,30 @@ import teamwise from "../assets/images/teamwise/teamwise.jpg";
 const worklist = [
   {
     id: 1,
+    title: "FERME DE LA ROUGERAIE",
+    description: "Site E-commerce",
+    period: "Mars - Juin 2025",
+    image: fermeImage,
+    tags: ["Vue 3", "Pinia", "PHP", "Symfony", "Easyadmin", "MySQL", "Tailwind", "Figma"],
+    link: "ferme-rougeraie",
+    intro: "Site e-commerce pour une productrice de produits bio.",
+    pitch: `Ce site de vente en ligne a été développé pour Léa, une productrice de produits bios.
+            Les utilisateurs peuvent parcourir les produits, les ajouter à leur panier et passer commande.
+
+            Le frontend est construit avec Vue 3, tandis que le backend repose sur PHP / Symfony et utilise EasyAdmin pour la gestion du back-office.
+            Le site s’appuie sur une base de données MySQL pour stocker les produits, les commandes et les utilisateurs.
+
+            Depuis son espace d’administration sécurisé, Léa peut consulter un tableau de bord regroupant l’ensemble des commandes passées,
+            créer, modifier ou supprimer des fiches produits, et gérer l’affichage des articles proposés à la vente.`,
+
+    url: "https://github.com/ThomasdevLC/ferme_de_la_rougeraie_v2-symfony-backend",
+    url2: "https://github.com/ThomasdevLC/ferme_de_la_rougeraie_v2-vue-frontend",
+  },
+  {
+    id: 2,
     title: "TEAMWISE",
     description: "Application de covoiturage",
-    period: "Septembre 2024",
+    period: "2024",
     image: teamwise,
     tags: ["Angular", "PrimeNG", "Tailwind", "Java", "Spring Boot", "MySQL"],
     link: "teamwise",
@@ -21,40 +41,11 @@ const worklist = [
     url: "https://github.com/ThomasdevLC/app-covoiturage-back",
     url2: "https://github.com/ThomasdevLC/app-covoiturage-front",
   },
-
-  {
-    id: 2,
-    title: "FERME DE LA ROUGERAIE",
-    description: "Site E-commerce",
-    period: "Mai 2023",
-    image: fermeImage,
-    tags: ["Vue", "Pinia", "Sass", "NodeJs", "Figma"],
-    link: "ferme-rougeraie",
-    intro: " Site e-commerce pour une productrice de produits bio .",
-    pitch:
-      "Le site a été développé à l'aide de Vue 3 pour la partie frontend, NodeJS pour la partie Backend et MongoDb pour la base de données de produits. J'ai implémenté un panier pour que les utilisateurs puissent ajouter des produits et passer leur commande. En tant qu'administrateur, Léa, la productrice, peut se connecter au site et accéder à un résumé complet de toutes les commandes. La page d'administration lui permet également de créer les cartes produits et de gérer leur affichage sur le site.",
-    url: "http://fermerougeraie.thomaslecam.com/",
-    url2: "http://fermerougeraie.thomaslecam.com/admin",
-  },
   {
     id: 3,
-    title: "GCA",
-    description: "Stage Gca",
-    period: "Mars 2023",
-    image: pwaImage,
-    tags: ["Vue", "Pinia", "Sass", "Figma"],
-    link: "gca",
-    intro:
-      "Lors de mon stage dans l'entreprise GCA, j'ai développé une application mobile first conçue spécifiquement pour répondre aux besoins des équipes commerciales.",
-    pitch:
-      "Ce projet, développé avec Vue 3 et configuré avec Vite, a été créé dans le but de tenir les commerciaux informés de leurs chiffres de vente et de leurs objectifs en temps réel. En adoptant une approche PWA (Progressive Web App), l'application peut  être installée directement sur l'écran d'accueil des utilisateurs, offrant ainsi une expérience similaire à celle d'une application native.",
-    url: "https://github.com/ThomasdevLC/pwa",
-  },
-  {
-    id: 4,
     title: "BLOG",
     description: "Blog pour une association",
-    period: "Février 2024",
+    period: "2024",
     image: blogImage,
     tags: ["Nuxt 3", "Strapi", "Tailwind", "Figma"],
     link: "blog",
@@ -64,23 +55,24 @@ const worklist = [
     url: "https://github.com/ThomasdevLC/blog-front-nuxt",
   },
   {
-    id: 5,
-    title: "ASPHALT",
-    description: "Site E-commerce",
-    period: "Août 2023",
-    image: asphaltImage,
-    tags: ["React", "Sass", "Gsap", "Framer-Motion", "Figma"],
-    link: "bikeshop",
-    intro: " Site web pour une marque de vélo fictive",
+    id: 4,
+    title: "GCA",
+    description: "Stage Gca",
+    period: "2023",
+    image: pwaImage,
+    tags: ["Vue", "Pinia", "Sass", "Figma"],
+    link: "gca",
+    intro:
+      "Application mobile first conçue  pour répondre aux besoins des équipes commerciales.",
     pitch:
-      "L'objectif de ce projet était d'explorer deux bibliothèques d'animation : GSAP et Framer Motion. Mon principal but était de créer des animations fluides et des effets visuels pour un site web fictif de marque de vélo.",
-    url: "https://bike-shop.thomaslecam.com/",
+      "Ce projet, développé avec Vue 3 et configuré avec Vite, a été créé dans le but de tenir les commerciaux informés de leurs chiffres de vente et de leurs objectifs en temps réel. En adoptant une approche PWA (Progressive Web App), l'application peut  être installée directement sur l'écran d'accueil des utilisateurs, offrant ainsi une expérience similaire à celle d'une application native.",
+    url: "https://github.com/ThomasdevLC/pwa",
   },
   {
-    id: 6,
+    id: 5,
     title: "KASA",
     description: "Formation OpenClassrooms",
-    period: "Décembre 2022",
+    period: "2022",
     image: kasaImage,
     tags: ["React", "Sass"],
     link: "kasa",
@@ -89,6 +81,19 @@ const worklist = [
     pitch: "J'ai implémenté la partie front-end à l'aide de React. Le site est responsive et les composants sont modulaires et réutilisables.",
     url: "https://kasa.thomaslecam.com/",
   },
+ // {
+  //   id: 5,
+  //  title: "ASPHALT",
+  // description: "Site E-commerce",
+  // period: "Août 2023",
+  // image: asphaltImage,
+  //  tags: ["React", "Sass", "Gsap", "Framer-Motion", "Figma"],
+  // link: "bikeshop",
+  //  intro: " Site web pour une marque de vélo fictive",
+  //  pitch:
+  //    "L'objectif de ce projet était d'explorer deux bibliothèques d'animation : GSAP et Framer Motion. Mon principal but était de créer des animations fluides et des effets visuels pour un site web fictif de marque de vélo.",
+  // url: "https://bike-shop.thomaslecam.com/",
+  //},
 ];
 
 export default worklist;
