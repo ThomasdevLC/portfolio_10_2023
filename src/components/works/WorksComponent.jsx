@@ -41,8 +41,18 @@ const WorksComponent = () => {
           );
           break;
         case "FERME DE LA ROUGERAIE":
-          setLinkOne(switchLang === "fr" ? "VISITER SITE 🔗" : "VISIT SITE 🔗 ");
-          setLinkTwo(switchLang === "fr" ? "VISITER SITE ADMIN 🔗" : "VISIT ADMIN SITE 🔗");
+          setLinkOne(
+              <>
+                {switchLang === "fr" ? "REPO BACKEND" : "BACKEND REPO"}
+                <img src={git} alt="GitHub logo" style={{width: "20px", marginLeft: "8px"}}/>
+              </>
+          );
+          setLinkTwo(
+              <>
+                {switchLang === "fr" ? "REPO FRONTEND" : "FRONTEND REPO"}
+                <img src={git} alt="GitHub logo" style={{ width: "20px", marginLeft: "8px" }} />
+              </>
+          );
           break;
         case "GCA":
           setLinkOne(
@@ -59,9 +69,6 @@ const WorksComponent = () => {
                 <img src={git} alt="GitHub logo" style={{width: "20px", marginLeft: "8px"}}/>
               </>
           );
-          break;
-        case "ASPHALT":
-          setLinkOne(switchLang === "fr" ? "VOIR DÉMO 🎥" : "WATCH DEMO 🎥");
           break;
         case "KASA":
           setLinkOne(switchLang === "fr" ? "VISITER SITE 🔗" : "VISIT SITE 🔗 ");
@@ -95,7 +102,7 @@ const WorksComponent = () => {
                     <tr>
                       <th className="project__table__th">DATE</th>
                       <th className="project__table__th">STACK</th>
-                      <th className="project__table__th">LIENS</th>
+                      <th className="">LIENS</th>
                     </tr>
                   </thead>
                   <tbody>
